@@ -1,0 +1,235 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Tell us what goods you are exporting
+        <span class="govuk-caption-xl"> Add commodities to your export.</span>
+      </h1>{{releaseVersion | log }}
+
+{% include "includes/manage-commodities-intro.html" %}
+
+{% include "includes/tariff-search.html" %}
+
+
+    </div>
+  </div>
+
+
+<div class="govuk-width-container">
+
+
+
+
+<section class="sections">
+  <table class="tariff-table govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">
+          Click on the section title to show detail of contents
+        </th>
+        <th scope="col" class="govuk-table__header">Section</th>
+        <th scope="col" class="govuk-table__header">Chapters</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="L2-2">
+      <span class="govuk-visually-hidden">Section 1: </span> Live animals; animal products
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>I</td>
+  <td class="chapters govuk-table__cell">1 to 5</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 2: </span> Vegetable products
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>II</td>
+  <td class="chapters govuk-table__cell">6 to 14</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 3: </span> Animal or vegetable fats and oils and their cleavage products; prepared edible fats; animal or vegetable waxes
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>III</td>
+  <td class="chapters govuk-table__cell">15</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 4: </span> Prepared foodstuffs; beverages, spirits and vinegar; tobacco and manufactured tobacco substitutes
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>IV</td>
+  <td class="chapters govuk-table__cell">16 to 24</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 5: </span> Mineral products
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>V</td>
+  <td class="chapters govuk-table__cell">25 to 27</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 6: </span> Products of the chemical or allied industries
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>VI</td>
+  <td class="chapters govuk-table__cell">28 to 38</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 7: </span> Plastics and articles thereof; rubber and articles thereof
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>VII</td>
+  <td class="chapters govuk-table__cell">39 to 40</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 8: </span> Raw hides and skins, leather, furskins and articles thereof; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silkworm gut)
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>VIII</td>
+  <td class="chapters govuk-table__cell">41 to 43</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 9: </span> Wood and articles of wood; wood charcoal; cork and articles of cork; manufactures of straw, of esparto or of other plaiting materials; basket-ware and wickerwork
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>IX</td>
+  <td class="chapters govuk-table__cell">44 to 46</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 10: </span> Pulp of wood or of other fibrous cellulosic material; recovered (waste and scrap) paper or paperboard; paper and paperboard and articles thereof
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>X</td>
+  <td class="chapters govuk-table__cell">47 to 49</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 11: </span> Textiles and textile articles
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XI</td>
+  <td class="chapters govuk-table__cell">50 to 63</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 12: </span> Footwear, headgear, umbrellas, sun umbrellas, walking-sticks, seat-sticks, whips, riding-crops and parts thereof; prepared feathers and articles made therewith; artificial flowers; articles of human hair
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XII</td>
+  <td class="chapters govuk-table__cell">64 to 67</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 13: </span> Articles of stone, plaster, cement, asbestos, mica or similar materials; ceramic products; glass and glassware
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XIII</td>
+  <td class="chapters govuk-table__cell">68 to 70</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 14: </span> Natural or cultured pearls, precious or semi-precious stones, precious metals, metals clad with precious metal and articles thereof; imitation jewellery; coins
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XIV</td>
+  <td class="chapters govuk-table__cell">71</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 15: </span> Base metals and articles of base metal
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XV</td>
+  <td class="chapters govuk-table__cell">72 to 83</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 16: </span> Machinery and mechanical appliances; electrical equipment; parts thereof, sound recorders and reproducers, television image and sound recorders and reproducers, and parts and accessories of such articles
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XVI</td>
+  <td class="chapters govuk-table__cell">84 to 85</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 17: </span> Vehicles, aircraft, vessels and associated transport equipment
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XVII</td>
+  <td class="chapters govuk-table__cell">86 to 89</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 18: </span> Optical, photographic, cinematographic, measuring, checking, precision, medical or surgical instruments and apparatus; clocks and watches; musical instruments; parts and accessories thereof
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XVIII</td>
+  <td class="chapters govuk-table__cell">90 to 92</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 19: </span> Arms and ammunition; parts and accessories thereof
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XIX</td>
+  <td class="chapters govuk-table__cell">93</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 20: </span> Miscellaneous manufactured articles
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XX</td>
+  <td class="chapters govuk-table__cell">94 to 96</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Section 21: </span> Works of art, collectors' pieces and antiques
+</a>  </td>
+  <td class="numeral govuk-table__cell"><span class="govuk-visually-hidden">Section </span>XXI</td>
+  <td class="chapters govuk-table__cell">97 to 98</td>
+</tr>
+
+    </tbody>
+  </table>
+</section>
+
+
+
+
+
+</div>
+
+
+{% endblock %}
+
+Carcases and half-carcases
+Short forequarters
+Chines and/or best ends
+Legs
+
+

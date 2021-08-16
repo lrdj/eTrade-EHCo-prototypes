@@ -1,0 +1,97 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Carcases and half-carcases of lamb, frozen / Domestic lamb
+        <span class="govuk-caption-xl">EHC = 206/2010 (2017/731) Meat of domestic sheep and goat - Model OVI</span>
+      </h1>
+
+      <h2 class="govuk-heading-m">
+        Add the identification required to complete this commodity record in your application. <i>(can we flag options/mandatory on these fields?)</i> 
+      </h2>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">Product description (optional)</label>
+    <input class="govuk-input" type="text" id="PRODUCT_DESCRIPTION-0-10955-02043000">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">Species</label>
+    <select class="govuk-select full-width" id="TAXON_ID-1-10955-02043000">
+      <option value="" disabled="">Select a taxonomy</option><option>Ovis aries</option><option>Ars technica</option>
+    </select>
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">Nature of commodity</label>
+    <select class="govuk-select full-width" id="NATURE_OF_COMMODITY-2-10955-02043000">
+      <option value="" disabled="">Select a Nature of commodity</option><option value="BLPF">Blood products for feeding purposes</option><option value="BLOOD_PRODUCTS_FEEDINGSTUFF">Blood products / feedingstuff</option><option value="BLOOD_PRODUCTS_TECHNICAL">Blood products / technical</option><option value="BLPT">Blood products for technical purposes</option><option value="BONE">Bone</option><option value="POWDER_BONES">Powder bones</option><option value="BHHP">Bones, horns, hooves and products thereof</option><option value="BOWELS">Bowels</option><option value="BY_PRODUCTS_FEEDINGSTUFF">By-products / feedingstuff</option><option value="BY_PRODUCTS_TECHNICAL">By-products / technical</option><option value="PETC">Canned petfood</option><option value="CATW">Catering waste</option><option value="COL">Collagen</option><option value="COLOSTRUM">Colostrum</option><option value="COMR">Compost after composting</option><option value="BILE">Bile</option><option value="BIOD">Biodiesel</option><option value="BIOG">Biogas</option><option value="BLOOD">Blood</option><option value="SERE">Blood and blood products from equidae</option>
+    </select>
+  </div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="weight">
+    The <b>net</b> Weight of this commodity, in kilograms?
+  </label>
+  <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="weight" name="weight" type="text" spellcheck="false">
+    <div class="govuk-input__suffix" aria-hidden="true">kg</div>
+  </div>
+</div>
+
+<ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="#">add slaughterhouse identification (optional)</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">add cutting plant identification</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">add cold store identification</a>
+  </li>
+  <li>
+    <a class="govuk-link" href="#">more</a>
+  </li>
+</ul>
+
+
+
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button" onclick="window.location.href = 'manage';">
+    Save and continue
+  </button>
+
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="window.location.href = '/v01/to-do-list#eltoppio';">
+    Return to manage commodity
+  </button>
+</div>
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px;background-color: #f3f2f1;border-top: 2px solid #ff003b;display: block;padding: 1em 15px 15px;text-decoration: none;">
+        <h2 class="gem-c-contextual-sidebar__brexit-heading govuk-heading-s">Do you need help?</h2>
+        <p class="gem-c-contextual-sidebar__brexit-text govuk-body">
+          <a class="govuk-link" data-module="gem-track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="#" data-track-dimension="Check what you need to do" data-track-dimension-index="29" lang="en" href="#">Review the guidance and contact us for assistance.</a>
+        </p>
+      </div>
+    </div>
+
+
+
+{% endblock %}
+

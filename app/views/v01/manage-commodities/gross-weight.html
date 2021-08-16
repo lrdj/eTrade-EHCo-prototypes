@@ -1,0 +1,60 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Gross weight of export
+        <span class="govuk-caption-xl">The total gross weight including all commodities</span>
+      </h1>
+
+      <p>
+        Add the gross weight of your shipment. This refers to the sum of the gross weight of the included commodities plus the additional shipment and packaging weight added by grouping the items together into this one shipment.
+      </p>
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="weight">
+    <b>Gross</b> Weight of this export (goods+packaging+container), in tonnes?
+  </label>
+  <div class="govuk-input__wrapper"><input class="govuk-input govuk-input--width-5" id="weight" name="weight" type="text" spellcheck="false">
+    <div class="govuk-input__suffix" aria-hidden="true">Tonnes</div>
+  </div>
+</div>
+
+
+
+<div class="govuk-button-group">
+  <button class="govuk-button" data-module="govuk-button" onclick="window.location.href = '/v01/to-do-list#eltoppio';">
+    Save and return to to-do list
+  </button>
+</div>
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px;background-color: #f3f2f1;border-top: 2px solid #ff003b;display: block;padding: 1em 15px 15px;text-decoration: none;">
+        <h2 class="gem-c-contextual-sidebar__brexit-heading govuk-heading-s">Do you need help?</h2>
+        <p class="gem-c-contextual-sidebar__brexit-text govuk-body">
+          <a class="govuk-link" data-module="gem-track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="#" data-track-dimension="Check what you need to do" data-track-dimension-index="29" lang="en" href="#">Review the guidance and contact us for assistance.</a>
+        </p>
+      </div>
+    </div>
+
+
+
+{% endblock %}
+

@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  eTrade Proto v01
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+<h1 class="govuk-heading-xl">Notes and questions
+<span class="govuk-caption-m">(starting August 2021)</span>
+</h1>
+
+
+<ol class="govuk-list govuk-list--number">
+<li>
+  Steve Gibson: Traces expects the Ship IMO number entered in the Means of Transport section to be valid and be available in Traces. If it isn't valid then the submission will fail.
+</li>
+<li>Steve Gibson: The Border Control Post list we currently have is incomplete and does not match up with the BCPs listed in Traces. Again, a submission will fail if we send across a BCP code that doesn't exist in Traces.</li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+
+
+
+</div>
+</div>
+
+{% endblock %}

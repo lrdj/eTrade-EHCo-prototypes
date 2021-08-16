@@ -1,0 +1,114 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Tell us what goods you are exporting
+        <span class="govuk-caption-xl"> Add commodities to your export.</span>
+      </h1>{{releaseVersion | log }}
+
+<!-- include "includes/manage-commodities-introB.html" -->
+
+      <h2 class="govuk-heading-m">Now click on the chapter heading to drill-down.</h2> 
+
+      <p>
+      Commodities are organised by section, chapter, and heading in the tariffs database. A choice of EHC codes will appear once you have selected the relevant heading.</p>
+
+
+    </div>
+  </div>
+
+
+<div class="govuk-width-container">
+
+
+<section class="sections">
+  <table class="tariff-table govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">
+          Back to: <a href="index">Main index of commodity sections</a>
+        </th>
+        <th scope="col" class="govuk-table__header">Section&nbsp;1</th>
+        <th scope="col" class="govuk-table__header">Chapter</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Chapter 01: </span> Live animals
+</a>  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">1</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="L3-2">
+      <span class="govuk-visually-hidden">Chapter 02: </span> Meat and edible meat offal
+</a>  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">2</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Chapter 03: </span> Fish and crustaceans, molluscs and other aquatic invertebrates
+</a>  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">3</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Chapter 04: </span> Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included 
+</a>  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">4</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      <span class="govuk-visually-hidden">Chapter 05: </span> Products of animal origin, not elsewhere specified or included
+</a>  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">5</td>
+</tr>
+
+
+    </tbody>
+  </table>
+</section>
+
+
+
+
+
+</div>
+
+
+{% endblock %}
+
+Carcases and half-carcases
+Short forequarters
+Chines and/or best ends
+Legs
+
+

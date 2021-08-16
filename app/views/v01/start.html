@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  eTrade Proto v01
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Apply for a new export health certificate
+      </h1>
+
+      <p>
+      Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Apply for an Export Health Certificate for the EU &amp; Northern Ireland.</li>
+        <li>Send the certificate electronically to the European Union.</li>
+        <li>Obtain PDF Certificates in EU languages.</li>
+      </ul>
+
+      <h2 class="govuk-heading-m">How long it takes</h2>
+
+      <p>
+      Allow around 10 minutes to apply.</p>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>
+      You can create drafts if you need to obtain further information to complete. You will need to know what commodity and what certificate you require.</p>
+
+
+<!--
+<div class="govuk-form-group" data-v-5f41b292=""><label class="govuk-label govuk-label--m" for="application-reference" data-v-5f41b292=""> Application reference </label><div class="govuk-input__wrapper" data-v-5f41b292="">
+<input class="govuk-input" id="application-reference" name="application-reference" type="text" spellcheck="false" data-v-5f41b292=""><div class="govuk-input__suffix button--suffix" aria-hidden="true" data-v-5f41b292="">
+<button class="govuk-button" data-v-5f41b292="">Save</button><button class="govuk-button govuk-button--secondary m-l-5" data-v-5f41b292="">Cancel</button></div></div></div>
+-->
+
+
+
+      <p>
+      You cannot use this service if you're not a UK Exporter.</p>
+
+<a href="add-reference" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+  Start now
+  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+    <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+  </svg></a>
+
+
+    </div>
+  </div>
+
+{% endblock %}

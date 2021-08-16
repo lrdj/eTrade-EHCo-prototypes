@@ -1,0 +1,328 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Tell us what goods you are exporting
+        <span class="govuk-caption-xl"> Add commodities to your export.</span>
+      </h1>{{releaseVersion | log }}
+
+<!-- include "includes/manage-commodities-introC.html" -->
+
+<p>
+  Select the correct EHC certificate code from the list and click on "Add to export" to save it as part of your application
+</p>
+
+    </div>
+  </div>
+
+<ul class="govuk-list sub-list" data-v-2c995ff1="">
+  <li class="node-tree" data-v-2c995ff1="">
+    <strong class="commodity-code" data-v-2c995ff1="">
+      <a class="govuk-link" href="#" data-v-2c995ff1="">02</a>
+    </strong>
+    <strong class="commodity-code" data-v-2c995ff1="">
+      <a class="govuk-link" href="#" data-v-2c995ff1="">04</a>
+    </strong>
+    <strong class="commodity-code" data-v-2c995ff1="">
+      <a class="govuk-link" href="#" data-v-2c995ff1="">30</a>
+    </strong>
+    <strong class="commodity-code" data-v-2c995ff1="">
+      <a class="govuk-link" href="#" data-v-2c995ff1="">00</a>
+    </strong>
+    <span class="commodity-label" data-v-2c995ff1="">
+      <a class="govuk-link" href="#" data-v-2c995ff1="">Carcases and half-carcases of lamb, frozen</a>
+    </span>
+
+    <ul class="govuk-list" data-v-2c995ff1="">
+      <li data-v-2c995ff1="">Select a certificate to use:</li>
+      <li data-v-2c995ff1=""><div class="govuk-radios" data-v-2c995ff1=""><div class="govuk-radios__item" data-v-2c995ff1=""><input class="govuk-radios__input" id="11437" name="certificateSelection" type="radio" data-v-2c995ff1=""><label class="govuk-label govuk-radios__label" for="11437" data-v-2c995ff1="">(2020/2235) Model NZ-TRANSIT-SG</label></div></div></li>
+      <li data-v-2c995ff1=""><div class="govuk-radios" data-v-2c995ff1=""><div class="govuk-radios__item" data-v-2c995ff1=""><input class="govuk-radios__input" id="10955" name="certificateSelection" type="radio" data-v-2c995ff1=""><label class="govuk-label govuk-radios__label" for="10955" data-v-2c995ff1="">2015/1901 4.A. Fresh Meat (NZ)</label></div></div></li>
+      <li data-v-2c995ff1=""><div class="govuk-radios" data-v-2c995ff1=""><div class="govuk-radios__item" data-v-2c995ff1=""><input class="govuk-radios__input" id="10891" name="certificateSelection" type="radio" data-v-2c995ff1=""><label class="govuk-label govuk-radios__label" for="10891" data-v-2c995ff1="">206/2010 (2016/535) Model NZ-TRANSIT-SG</label></div></div></li>
+      <li data-v-2c995ff1=""><div class="govuk-radios" data-v-2c995ff1=""><div class="govuk-radios__item" data-v-2c995ff1=""><input class="govuk-radios__input" id="11024" name="certificateSelection" type="radio" data-v-2c995ff1=""><label class="govuk-label govuk-radios__label" for="11024" data-v-2c995ff1="">206/2010 (2017/731) Meat of domestic sheep and goat - Model OVI</label></div></div></li>
+      <li data-v-2c995ff1=""><div class="govuk-radios" data-v-2c995ff1=""><div class="govuk-radios__item" data-v-2c995ff1=""><input class="govuk-radios__input" id="11415" name="certificateSelection" type="radio" data-v-2c995ff1=""><label class="govuk-label govuk-radios__label" for="11415" data-v-2c995ff1="">206/2010 (2020/2235) Meat of domestic sheep and goat - Model OVI</label></div></div></li>
+      <li data-v-2c995ff1=""><div class="govuk-radios" data-v-2c995ff1=""><div class="govuk-radios__item" data-v-2c995ff1=""><input class="govuk-radios__input" id="10253" name="certificateSelection" type="radio" data-v-2c995ff1=""><label class="govuk-label govuk-radios__label" for="10253" data-v-2c995ff1="">206/2010 Fresh meat transit - Model TRANSIT/STORAGE</label></div></div></li></ul></li></ul>
+
+
+
+
+<dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      EHC Code commodity heading
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Carcases and half-carcases of lamb, frozen
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      EHC Code as it appears in EU/TRACES
+    </dt>
+    <dd class="govuk-summary-list__value">
+      206/2010 (2020/2235) Meat of domestic sheep and goat - Model OVI
+    </dd>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> date of birth</span>
+      </a>
+    </dd>
+  </div>
+
+</dl>
+
+
+
+
+
+<hr>
+
+
+<h1 class="govuk-heading-xl">You have added 3 directors</h1>
+
+<div class="govuk-form-group">
+  <dl class="hmrc-add-to-a-list hmrc-add-to-a-list--short">
+    
+    <div class="hmrc-add-to-a-list__contents">
+      <dt class="hmrc-add-to-a-list__identifier hmrc-add-to-a-list__identifier--light">
+        Sydney Russell
+      </dt>
+      <dd class="hmrc-add-to-a-list__change">
+        <a class="govuk-link" href="#">
+          <span aria-hidden="true">Change</span>
+          <span class="govuk-visually-hidden">Change Sydney Russell</span>
+        </a>
+      </dd>
+      <dd class="hmrc-add-to-a-list__remove">
+        <a class="govuk-link" href="#">
+          <span aria-hidden="true">Remove</span>
+          <span class="govuk-visually-hidden">Remove Sydney Russell from the list</span>
+        </a>
+      </dd>
+    </div>
+    <div class="hmrc-add-to-a-list__contents">
+      <dt class="hmrc-add-to-a-list__identifier hmrc-add-to-a-list__identifier--light">
+        Michael Cain
+      </dt>
+      <dd class="hmrc-add-to-a-list__change">
+        <a class="govuk-link" href="#">
+          <span aria-hidden="true">Change</span>
+          <span class="govuk-visually-hidden">Change Michael Cain</span>
+        </a>
+      </dd>
+      <dd class="hmrc-add-to-a-list__remove">
+        <a class="govuk-link" href="#">
+          <span aria-hidden="true">Remove</span>
+          <span class="govuk-visually-hidden">Remove Michael Cain from the list</span>
+        </a>
+      </dd>
+    </div>
+    <div class="hmrc-add-to-a-list__contents">
+      <dt class="hmrc-add-to-a-list__identifier hmrc-add-to-a-list__identifier--light">
+        Jeremy Winter
+      </dt>
+      <dd class="hmrc-add-to-a-list__change">
+        <a class="govuk-link" href="#">
+          <span aria-hidden="true">Change</span>
+          <span class="govuk-visually-hidden">Change Jeremy Winter</span>
+        </a>
+      </dd>
+      <dd class="hmrc-add-to-a-list__remove">
+        <a class="govuk-link" href="#">
+          <span aria-hidden="true">Remove</span>
+          <span class="govuk-visually-hidden">Remove Jeremy Winter from the list</span>
+        </a>
+      </dd>
+    </div>
+    
+  </dl>
+</div>
+
+<form method="post" novalidate="" action="">
+  
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="add-another-hint">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
+    Do you need to add another director?
+  </legend>
+  <div id="add-another-hint" class="govuk-hint">
+    You must tell us about all your directors.
+  </div>
+  <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="add-another" name="add-another" type="radio" value="Yes">
+          <label class="govuk-label govuk-radios__label" for="add-another">
+        Yes
+      </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="add-another-2" name="add-another" type="radio" value="No">
+          <label class="govuk-label govuk-radios__label" for="add-another-2">
+        No
+      </label>
+        </div>
+  </div>
+
+</fieldset>
+</div>
+
+  <button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="govuk-width-container">
+
+
+<a href="L3x"><img src="/public/images/drill-downC.png" style="margin-top: 1em;width: 800px;border: none;"></a>
+
+
+
+<section class="sections">
+  <table class="tariff-table govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">
+          Back to: <a href="L2">Meat and edible meat offal</a>
+        </th>
+        <th scope="col" class="govuk-table__header">Chapter</th>
+        <th scope="col" class="govuk-table__header">Heading</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat of bovine animals, fresh or chilled</a>
+  </td>
+  <td class="numeral govuk-table__cell">2</td>
+  <td class="chapters govuk-table__cell">1</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat of bovine animals, frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell">2</td>
+  <td class="chapters govuk-table__cell">2</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat of swine, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell">2</td>
+  <td class="chapters govuk-table__cell">3</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      Meat of sheep or goats, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">4</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      Meat of horses, asses, mules or hinnies, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">5</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">6</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat and edible offal, of the poultry of heading 0105, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">7</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Other meat and edible meat offal, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">8</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">9</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">10</td>
+</tr>
+
+
+
+    </tbody>
+  </table>
+</section>
+
+
+
+
+
+</div>
+
+
+{% endblock %}
+
+Carcases and half-carcases
+Short forequarters
+Chines and/or best ends
+Legs
+
+

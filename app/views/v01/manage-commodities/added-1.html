@@ -1,0 +1,82 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        You have added 1 commodity to this application
+      </h1>
+
+<!-- include "includes/manage-commodities-introC.html" -->
+
+<!--
+  Select the correct EHC certificate code from the list and click on "Add to export" to save it as part of your application
+-->
+
+    </div>
+  </div>
+
+<dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__value">
+      206/2010 (2020/2235) Meat of domestic sheep and goat - Model OVI
+    </dt>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> EHC code</span>
+      </a>
+    </dd>
+  </div>
+
+</dl>
+
+<form method="post" novalidate="" action="index2">
+  
+<div class="govuk-form-group">
+<fieldset class="govuk-fieldset" aria-describedby="add-another-hint">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--m">
+    Do you need to add another commodity?
+  </legend>
+  <div id="add-another-hint" class="govuk-hint">
+    You may add codes for all the goods in this consignment.
+  </div>
+  <div class="govuk-radios govuk-radios--inline">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="add-another" name="add-another" type="radio" value="Yes">
+          <label class="govuk-label govuk-radios__label" for="add-another">
+        Yes
+      </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="add-another-2" name="add-another" type="radio" value="No">
+          <label class="govuk-label govuk-radios__label" for="add-another-2">
+        No
+      </label>
+        </div>
+  </div>
+
+</fieldset>
+</div>
+
+<button class="govuk-button" data-module="govuk-button">
+  Continue
+</button>
+
+</form>
+
+
+
+{% endblock %}
+

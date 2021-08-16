@@ -1,0 +1,49 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  eTrade Proto v01
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Give this application a name</h1>
+
+      <p>
+      This is a reference that should be meaningful to you. It will help you select your application from a list of applicants.</p>
+
+      <div class="govuk-form-group" data-v-20f229e1="">
+
+        <p id="ref-hint" class="govuk-hint">
+        Enter a reference up to 20 letters or numbers long, such as an invoice number or consignee.</p>
+
+        <input class="govuk-input govuk-input--width-20" id="ref" name="UserReference" type="text" aria-describedby="ref-hint" max="20" required="" value="dug_test_99_fish_and_goats3">
+
+      </div>
+
+      <div class="govuk-checkboxes" data-v-20f229e1="" style="margin-bottom: 1em;">
+        <div class="govuk-checkboxes__item" data-v-20f229e1="">
+          <input class="govuk-checkboxes__input" id="catch-cert" type="checkbox" data-v-20f229e1=""><label class="govuk-label govuk-checkboxes__label" for="catch-cert" data-v-20f229e1="">Use information from a catch certificate</label>
+        </div>
+      </div>
+
+      <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="window.location.href = 'manage-commodities/';" >
+        Save and continue
+      </button>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+
+

@@ -1,0 +1,129 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  eTrade Proto v01
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row"  id="eltoppio">
+    
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Complete these to-do items
+        <span class="govuk-caption-xl">These sections must be completed before submiting your application for an export health certificate.</span>
+      </h1>
+
+      <div class="govuk-form-group" data-v-5f41b292="">
+        <label class="govuk-label govuk-label--m" for="application-reference" data-v-5f41b292=""> Application reference</label>
+        <div class="govuk-input__wrapper" data-v-5f41b292="">
+          <input class="govuk-input" id="application-reference" name="application-reference" type="text" spellcheck="false" disabled="" data-v-5f41b292="" value="dug_test_99_fish_and_goats3" style="padding:0;border:none;">
+          <div class="govuk-input__suffix button--suffix" aria-hidden="true" data-v-5f41b292="" style="padding:0;border:none;">
+            <button class="govuk-button govuk-button--secondary" data-v-5f41b292="" style="">Change</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="intersection" data-v-5f41b292=""></div>
+
+      <h4 class="govuk-heading-m sticky-heading" data-v-5f41b292="">1. Description of the goods</h4>
+      <p class="govuk-body" data-v-5f41b292="">Add, modify and remove commodities and provide any required information. </p>
+      <dl class="govuk-summary-list" data-v-5f41b292="">
+        
+        <div class="govuk-summary-list__row" id="manage-commodities" data-v-5f41b292="">
+          <dt class="govuk-summary-list__key"><a href="/v01/manage-commodities/manage" class="govuk-link">Complete commodities information</a></dt>
+          <dd class="govuk-summary-list__actions">
+            <span class="govuk-tag Draft" >Draft</span>
+          </dd>
+        </div>
+        
+        <div class="govuk-summary-list__row" id="manage-gross-weight" data-v-5f41b292="">
+          <dt class="govuk-summary-list__key"><a href="/v01/manage-commodities/gross-weight" class="govuk-link">Total (gross) weight of shipment or export</a></dt>
+          <dd class="govuk-summary-list__actions">
+            <span class="govuk-tag not-started" >Not started</span>
+          </dd>
+        </div>
+
+        <div class="govuk-summary-list__row" id="goods-certified-as" data-v-5f41b292="">
+          <dt class="govuk-summary-list__key"><a href="#a">Goods certified as</a></dt>
+          <dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd>
+        </div>
+
+        <div class="govuk-summary-list__row" id="container-number/seal-number" data-v-5f41b292="">
+          <dt class="govuk-summary-list__key"><a href="#"><a href="#b">Container number/seal number</a></dt>
+          <dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd>
+          </div>
+      </dl>
+
+      <div class="intersection" data-v-5f41b292=""></div>
+
+      <h4 class="govuk-heading-m sticky-heading" data-v-5f41b292="">2. Additional documents (optional)</h4>
+      <p class="govuk-body" data-v-5f41b292="">Upload packing lists, schedules and other supporting documents to attach to your application.</p>
+      <dl class="govuk-summary-list" data-v-5f41b292="">
+        <div class="govuk-summary-list__row" id="accompanying-documents" data-v-5f41b292="">
+          <dt class="govuk-summary-list__key"><a href="#">Accompanying documents</a></dt>
+          <dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd>
+        </div>
+      </dl>
+
+      <div class="intersection" data-v-5f41b292=""></div>
+
+      <h4 class="govuk-heading-m sticky-heading" data-v-5f41b292="">3. Persons involved</h4><p class="govuk-body" data-v-5f41b292=""> Manage the persons involved with this application. </p>
+
+          <dl class="govuk-summary-list" data-v-5f41b292="">
+
+            <div class="govuk-summary-list__row" id="consignor-or-exporter" data-v-5f41b292="">
+
+              <dt class="govuk-summary-list__key"><a href="#">Consignor or Exporter</a></dt>
+
+              <dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div><div class="govuk-summary-list__row" id="consignee-or-importer" data-v-5f41b292=""><dt class="govuk-summary-list__key"><a href="#">Consignee or Importer</a></dt><dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div><div class="govuk-summary-list__row" id="operator-responsible-for-the-consignment" data-v-5f41b292=""><dt class="govuk-summary-list__key"><a href="#">Operator responsible for the consignment</a></dt><dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div><div class="govuk-summary-list__row" id="certifier" data-v-5f41b292="">
+
+            <dt class="govuk-summary-list__key"><a href="#">Certifier</a></dt><dd class="govuk-summary-list__actions">
+
+
+            <span class="govuk-tag not-started" >Not started</span>
+
+          </dd></div></dl><h4 class="govuk-heading-m sticky-heading" data-v-5f41b292="">4. Transport</h4><p class="govuk-body" data-v-5f41b292=""> Manage the transport for this application. </p><dl class="govuk-summary-list" data-v-5f41b292=""><div class="govuk-summary-list__row" id="arrival-and-departure" data-v-5f41b292=""><dt class="govuk-summary-list__key"><a href="#">Arrival and departure</a></dt><dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div><div class="govuk-summary-list__row" id="place-of-origin" data-v-5f41b292=""><dt class="govuk-summary-list__key"><a href="#">Place of origin</a></dt><dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div><div class="govuk-summary-list__row" id="border-control-post" data-v-5f41b292=""><dt class="govuk-summary-list__key"><a href="#">Border control post</a></dt><dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div><div class="govuk-summary-list__row" id="means-of-transport" data-v-5f41b292=""><dt class="govuk-summary-list__key"><a href="#">Means of transport</a></dt><dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div><div class="govuk-summary-list__row" id="place-of-destination" data-v-5f41b292=""><dt class="govuk-summary-list__key"><a href="#">Place of destination</a></dt><dd class="govuk-summary-list__actions"><span class="govuk-tag not-started" >Not started</span></dd></div></dl><h4 class="govuk-heading-m sticky-heading" data-v-5f41b292="">5. Check and submit your application</h4><p class="govuk-body" data-v-5f41b292=""> Once you have completed all of the required sections above you may submit your application by clicking "Submit your application" below. </p><button class="govuk-button" disabled="" data-v-5f41b292="">Submit your application</button><div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary" data-v-5f41b292=""><h2 class="govuk-error-summary__title" id="error-summary-title" data-v-5f41b292=""> You have not yet completed the following required tasks </h2><div class="govuk-error-summary__body" data-v-5f41b292=""><ul class="govuk-list govuk-error-summary__list" data-v-5f41b292=""><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Arrival and departure</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Manage commodities</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Goods certified as</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Container no seal no</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Consignor</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Consignee</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Operator</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Certifier</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Place of origin</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Border control post</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Means of transport</a></li><li data-v-5f41b292=""><a href="#" data-v-5f41b292="">Place of destination</a></li>
+          </ul>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px;background-color: #f3f2f1;border-top: 2px solid #ff003b;display: block;padding: 1em 15px 15px;text-decoration: none;">
+        <h2 class="gem-c-contextual-sidebar__brexit-heading govuk-heading-s">Do you need help?</h2>
+        <p class="gem-c-contextual-sidebar__brexit-text govuk-body">
+          <a class="govuk-link" data-module="gem-track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="#" data-track-dimension="Check what you need to do" data-track-dimension-index="29" lang="en" href="#">Review the guidance and contact us for assistance.</a>
+        </p>
+      </div>
+    </div>
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+

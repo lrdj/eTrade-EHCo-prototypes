@@ -1,0 +1,1236 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Enter missing details for each commodity
+      </h1>
+<!-- include "includes/manage-commodities-introC.html" -->
+<!--
+  Select the correct EHC certificate code from the list and click on "Add to export" to save it as part of your application
+-->
+
+
+
+
+
+
+<dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__value">
+      206/2010 (2017/731) Meat of domestic sheep and goat - Model OVI
+    </dt>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> EHC code</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__value">
+      206/2010 (2020/2235) Meat of domestic sheep and goat - Model OVI
+    </dt>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="#">
+        Change<span class="govuk-visually-hidden"> EHC code</span>
+      </a>
+    </dd>
+  </div>
+
+</dl>
+
+<form method="post" novalidate="" action="/v01/to-do-list#eltoppio">
+
+<button class="govuk-button" data-module="govuk-button">
+  Return to to-do list
+</button>
+
+</form>
+
+
+
+
+
+
+
+
+
+<div class="certificate-pane open">
+<div class="certificate-pane--heading">(2020/2235) Model NZ-TRANSIT-SG - 1 commodity <span class="pull-right"><span class="fas fa-chevron-up"></span></span></div>
+<div class="certificate-pane--body">
+<div class="certificate-pane--body--actions"><h4 class="govuk-heading-s">Showing 1 commodity <span class="pull-right"><a class="tag-action grey"><span class="fas fa-edit"></span> Change certificate </a><a class="tag-action danger"><span class="fas fa-trash"></span> Remove certificate </a></span></h4></div>
+<div class="commodity-pane open">
+<div class="commodity-pane--heading"><span class="govuk-caption-m caption">020120</span><h4 class="govuk-heading-s heading">Other cuts with bone in <span class="pull-right"><span class="fas fa-chevron-up"></span></span></h4></div>
+<div class="commodity-pane--body">
+<div class="commodity-pane--body--actions"><h4 class="govuk-heading-m"> Identifications and weights <span class="pull-right"><a class="tag-action danger"><span class="fas fa-trash"></span> Remove commodity </a></span></h4></div>
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-half model-questions">
+<div class="identification-questions"><section id="intro"><h4 class="govuk-heading-s">Add an identification</h4></section><section id="questions">
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Product description</label><input class="govuk-input" type="text" id="PRODUCT_DESCRIPTION-0-11437-020120"></div>
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Species</label>
+
+<select class="govuk-select full-width" id="TAXON_ID-1-11437-020120">
+  <option value="" disabled="">Select a taxonomy</option>
+  <option>Bibos spp.</option>
+  <option>Bos taurus</option>
+  <option>Novibos spp.</option>
+  <option>Bos</option>
+  <option>Syncerus</option>
+  <option>Ovibos</option>
+  <option>Bison bison</option>
+  <option>Poephagus spp.</option>
+  <option>Bison</option>
+  <option>Bubalus bubalis</option>
+  <option>Bubalus</option>
+</select>
+
+</div>
+
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Treatment type</label>
+
+<select class="govuk-select full-width" id="TREATMENT_TYPE-2-11437-020120">
+  <option value="" disabled="">Select a Treatment type</option>
+  <option value="A">A = 0 T°C</option>
+  <option value="ANIMAL_BY_PRODUCTS_OF_CATEGORY_1">Animal by-products of category 1</option>
+  <option value="ANIMAL_BY_PRODUCTS_OF_CATEGORY_2">Animal by-products of category 2</option>
+  <option value="B">B = Fo&gt;=3°</option>
+  <option value="BONE_IN">bone in</option>
+  <option value="C">C = T&gt;=80°</option>
+  <option value="CHILLED">Chilled</option>
+  <option value="COMBINED_HEAT_TREATMENT">Combined heat treatment</option>
+  <option value="COOKED">cooked</option>
+  <option value="D">D = T&gt;=70°C</option>
+  <option value="DEBONED">deboned</option>
+  <option value="DRIED">dried</option>
+  <option value="E">E = Aw&lt;=0.93+Ph&lt;=6</option>
+  <option value="EVISCERATED">eviscerated</option>
+  <option value="F">F = T&gt;=65°C pv=40</option>
+  <option value="FRESH">Fresh</option>
+  <option value="FROZEN">frozen</option>
+  <option value="HOMOGENISATION">Homogenisation</option>
+  <option value="IN_SHELL">In shell</option>
+  <option value="LIVE">Live</option>
+  <option value="MATURED">matured</option>
+  <option value="MINCED">minced</option>
+  <option value="NO_TERMAL">No termal treatment</option>
+  <option>OTHER_PROCESS</option>
+  <option value="PASTEURISATION">pasteurisation</option>
+  <option value="PLUCKED">Plucked</option>
+  <option value="PREPARED">prepared</option>
+  <option value="PRESERVED">preserved</option>
+  <option value="PROCESSED">processed</option>
+  <option value="RAW_MILK">Raw milk</option>
+  <option value="ROASTED">Roasted</option>
+  <option value="SALTED">salted</option>
+  <option value="SHELLED">shelled</option>
+  <option value="SINGLE_HEAT_TREATMENT">Single heat treatment</option>
+  <option value="SKINNED">Skinned</option>
+  <option value="SMOKED">smoked</option>
+  <option value="STERILISATION">sterilisation</option>
+  <option value="TREATED">Treated</option>
+  <option>UHT</option>
+  <option value="ULTRAFILTRATION">Ultrafiltration</option>
+  <option value="ULTRASONICATION">Ultrasonication</option>
+  <option value="UNEVISCERATED">uneviscerated</option>
+  <option value="UNPLUCKED">Unplucked</option>
+  <option value="UNSKINNED">unskinned</option>
+</select>
+
+</div>
+
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Slaughterhouse</label>
+<div class="operator-search">
+<div class="operator-search-dropdown"><section id="search-and-select">
+<div class="govuk-form-group"><label class="govuk-label" for="country"> Country </label>
+
+<select class="govuk-select full-width" id="operator-search-country">
+  <option value="AF">Afghanistan</option>
+  <option value="AX">Åland Islands</option>
+  <option value="AL">Albania</option>
+  <option value="DZ">Algeria</option>
+  <option value="AS">American Samoa</option>
+  <option value="AD">Andorra</option>
+  <option value="AO">Angola</option>
+  <option value="AI">Anguilla</option>
+  <option value="AG">Antigua and Barbuda</option>
+  <option value="AR">Argentina</option>
+  <option value="AM">Armenia</option>
+  <option value="AW">Aruba</option>
+  <option value="AU">Australia</option>
+  <option value="AT">Austria</option>
+  <option value="AZ">Azerbaijan</option>
+  <option value="BS">Bahamas (the)</option>
+  <option value="BH">Bahrain</option>
+  <option value="BD">Bangladesh</option>
+  <option value="BB">Barbados</option>
+  <option value="BY">Belarus</option>
+  <option value="BE">Belgium</option>
+  <option value="BZ">Belize</option>
+  <option value="BJ">Benin</option>
+  <option value="BM">Bermuda</option>
+  <option value="BT">Bhutan</option>
+  <option value="BO">Bolivia (Plurinational State of)</option>
+  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+  <option value="BA">Bosnia and Herzegovina</option>
+  <option value="BW">Botswana</option>
+  <option value="BR">Brazil</option>
+  <option value="IO">British Indian Ocean Territory (the)</option>
+  <option value="BN">Brunei Darussalam</option>
+  <option value="BG">Bulgaria</option>
+  <option value="BF">Burkina Faso</option>
+  <option value="BI">Burundi</option>
+  <option value="CV">Cabo Verde</option>
+  <option value="KH">Cambodia</option>
+  <option value="CM">Cameroon</option>
+  <option value="CA">Canada</option>
+  <option value="KY">Cayman Islands (the)</option>
+  <option value="CF">Central African Republic (the)</option>
+  <option value="TD">Chad</option>
+  <option value="CL">Chile</option>
+  <option value="CN">China</option>
+  <option value="CO">Colombia</option>
+  <option value="KM">Comoros (the)</option>
+  <option value="CD">Congo (the Democratic Republic of the)</option>
+  <option value="CG">Congo (the)</option>
+  <option value="CK">Cook Islands (the)</option>
+  <option value="CR">Costa Rica</option>
+  <option value="CI">Côte d'Ivoire</option>
+  <option value="HR">Croatia</option>
+  <option value="CU">Cuba</option>
+  <option value="CW">Curaçao</option>
+  <option value="CY">Cyprus</option>
+  <option value="CZ">Czechia</option>
+  <option value="DK">Denmark</option>
+  <option value="DJ">Djibouti</option>
+  <option value="DM">Dominica</option>
+  <option value="DO">Dominican Republic (the)</option>
+  <option value="EC">Ecuador</option>
+  <option value="EG">Egypt</option>
+  <option value="SV">El Salvador</option>
+  <option value="GQ">Equatorial Guinea</option>
+  <option value="ER">Eritrea</option>
+  <option value="EE">Estonia</option>
+  <option value="SZ">Eswatini</option>
+  <option value="ET">Ethiopia</option>
+  <option value="FK">Falkland Islands (the) [Malvinas]</option>
+  <option value="FO">Faroe Islands (the)</option>
+  <option value="FJ">Fiji</option>
+  <option value="FI">Finland</option>
+  <option value="FR">France</option>
+  <option value="GF">French Guiana</option>
+  <option value="PF">French Polynesia</option>
+  <option value="GA">Gabon</option>
+  <option value="GM">Gambia (the)</option>
+  <option value="GE">Georgia</option>
+  <option value="DE">Germany</option>
+  <option value="GH">Ghana</option>
+  <option value="GI">Gibraltar</option>
+  <option value="GR">Greece</option>
+  <option value="GL">Greenland</option>
+  <option value="GD">Grenada</option>
+  <option value="GP">Guadeloupe</option>
+  <option value="GU">Guam</option>
+  <option value="GT">Guatemala</option>
+  <option value="GG">Guernsey</option>
+  <option value="GN">Guinea</option>
+  <option value="GW">Guinea-Bissau</option>
+  <option value="GY">Guyana</option>
+  <option value="HT">Haiti</option>
+  <option value="VA">Holy See (the)</option>
+  <option value="HN">Honduras</option>
+  <option value="HK">Hong Kong</option>
+  <option value="HU">Hungary</option>
+  <option value="IS">Iceland</option>
+  <option value="IN">India</option>
+  <option value="ID">Indonesia</option>
+  <option value="IR">Iran (Islamic Republic of)</option>
+  <option value="IQ">Iraq</option>
+  <option value="IE">Ireland</option>
+  <option value="IM">Isle of Man</option>
+  <option value="IL">Israel</option>
+  <option value="IT">Italy</option>
+  <option value="JM">Jamaica</option>
+  <option value="JP">Japan</option>
+  <option value="JE">Jersey</option>
+  <option value="JO">Jordan</option>
+  <option value="KZ">Kazakhstan</option>
+  <option value="KE">Kenya</option>
+  <option value="KI">Kiribati</option>
+  <option value="KP">Korea (the Democratic People's Republic of)</option>
+  <option value="KR">Korea (the Republic of)</option>
+  <option value="KW">Kuwait</option>
+  <option value="KG">Kyrgyzstan</option>
+  <option value="LA">Lao People's Democratic Republic (the)</option>
+  <option value="LV">Latvia</option>
+  <option value="LB">Lebanon</option>
+  <option value="LS">Lesotho</option>
+  <option value="LR">Liberia</option>
+  <option value="LY">Libya</option>
+  <option value="LI">Liechtenstein</option>
+  <option value="LT">Lithuania</option>
+  <option value="LU">Luxembourg</option>
+  <option value="MO">Macao</option>
+  <option value="MG">Madagascar</option>
+  <option value="MW">Malawi</option>
+  <option value="MY">Malaysia</option>
+  <option value="ML">Mali</option>
+  <option value="MT">Malta</option>
+  <option value="MH">Marshall Islands (the)</option>
+  <option value="MQ">Martinique</option>
+  <option value="MR">Mauritania</option>
+  <option value="MU">Mauritius</option>
+  <option value="YT">Mayotte</option>
+  <option value="MX">Mexico</option>
+  <option value="FM">Micronesia (Federated States of)</option>
+  <option value="MD">Moldova (the Republic of)</option>
+  <option value="MC">Monaco</option>
+  <option value="MN">Mongolia</option>
+  <option value="ME">Montenegro</option>
+  <option value="MS">Montserrat</option>
+  <option value="MA">Morocco</option>
+  <option value="MZ">Mozambique</option>
+  <option value="MM">Myanmar</option>
+  <option value="NA">Namibia</option>
+  <option value="NR">Nauru</option>
+  <option value="NP">Nepal</option>
+  <option value="NL">Netherlands (the)</option>
+  <option value="NC">New Caledonia</option>
+  <option value="NZ">New Zealand</option>
+  <option value="NI">Nicaragua</option>
+  <option value="NE">Niger (the)</option>
+  <option value="NG">Nigeria</option>
+  <option value="NU">Niue</option>
+  <option value="NF">Norfolk Island</option>
+  <option value="MP">Northern Mariana Islands (the)</option>
+  <option value="NO">Norway</option>
+  <option value="OM">Oman</option>
+  <option value="PK">Pakistan</option>
+  <option value="PW">Palau</option>
+  <option value="PS">Palestine, State of</option>
+  <option value="PA">Panama</option>
+  <option value="PG">Papua New Guinea</option>
+  <option value="PY">Paraguay</option>
+  <option value="PE">Peru</option>
+  <option value="PH">Philippines (the)</option>
+  <option value="PN">Pitcairn</option>
+  <option value="PL">Poland</option>
+  <option value="PT">Portugal</option>
+  <option value="PR">Puerto Rico</option>
+  <option value="QA">Qatar</option>
+  <option value="MK">Republic of North Macedonia</option>
+  <option value="RE">Réunion</option>
+  <option value="RO">Romania</option>
+  <option value="RU">Russian Federation (the)</option>
+  <option value="RW">Rwanda</option>
+  <option value="BL">Saint Barthélemy</option>
+  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+  <option value="KN">Saint Kitts and Nevis</option>
+  <option value="LC">Saint Lucia</option>
+  <option value="MF">Saint Martin (French part)</option>
+  <option value="PM">Saint Pierre and Miquelon</option>
+  <option value="VC">Saint Vincent and the Grenadines</option>
+  <option value="WS">Samoa</option>
+  <option value="SM">San Marino</option>
+  <option value="ST">Sao Tome and Principe</option>
+  <option value="SA">Saudi Arabia</option>
+  <option value="SN">Senegal</option>
+  <option value="RS">Serbia</option>
+  <option value="SC">Seychelles</option>
+  <option value="SL">Sierra Leone</option>
+  <option value="SG">Singapore</option>
+  <option value="SX">Sint Maarten (Dutch part)</option>
+  <option value="SK">Slovakia</option>
+  <option value="SI">Slovenia</option>
+  <option value="SB">Solomon Islands</option>
+  <option value="SO">Somalia</option>
+  <option value="ZA">South Africa</option>
+  <option value="GS">South Georgia and the South Sandwich Islands</option>
+  <option value="SS">South Sudan</option>
+  <option value="ES">Spain</option>
+  <option value="LK">Sri Lanka</option>
+  <option value="SD">Sudan (the)</option>
+  <option value="SR">Suriname</option>
+  <option value="SE">Sweden</option>
+  <option value="CH">Switzerland</option>
+  <option value="SY">Syrian Arab Republic</option>
+  <option value="TW">Taiwan (Province of China)</option>
+  <option value="TJ">Tajikistan</option>
+  <option value="TZ">Tanzania, United Republic of</option>
+  <option value="TH">Thailand</option>
+  <option value="TL">Timor-Leste</option>
+  <option value="TG">Togo</option>
+  <option value="TK">Tokelau</option>
+  <option value="TO">Tonga</option>
+  <option value="TT">Trinidad and Tobago</option>
+  <option value="TN">Tunisia</option>
+  <option value="TR">Turkey</option>
+  <option value="TM">Turkmenistan</option>
+  <option value="TC">Turks and Caicos Islands (the)</option>
+  <option value="TV">Tuvalu</option>
+  <option value="UG">Uganda</option>
+  <option value="UA">Ukraine</option>
+  <option value="AE">United Arab Emirates (the)</option>
+  <option value="GB">United Kingdom</option>
+  <option value="XI">United Kingdom - Northern Ireland</option>
+  <option value="UM">United States Minor Outlying Islands (the)</option>
+  <option value="US">United States of America (the)</option>
+  <option value="UY">Uruguay</option>
+  <option value="UZ">Uzbekistan</option>
+  <option value="VU">Vanuatu</option>
+  <option value="VE">Venezuela (Bolivarian Republic of)</option>
+  <option value="VN">Viet Nam</option>
+  <option value="VG">Virgin Islands (British)</option>
+  <option value="VI">Virgin Islands (U.S.)</option>
+  <option value="WF">Wallis and Futuna</option>
+  <option value="YE">Yemen</option>
+  <option value="ZM">Zambia</option>
+  <option value="ZW">Zimbabwe</option>
+</select>
+
+</div>
+
+<div class="govuk-form-group"><h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="search-fieldSlaughterhouse"> Search for and select Slaughterhouse</label></h1>
+
+<div class="govuk-input__wrapper"><input class="govuk-input" id="search-fieldSlaughterhouse" type="text" spellcheck="false" placeholder="Type here"></div></div></section></div></div></div>
+
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Cutting plant</label>
+<div class="operator-search">
+<div class="operator-search-dropdown"><section id="search-and-select">
+<div class="govuk-form-group"><label class="govuk-label" for="country"> Country </label>
+
+<select class="govuk-select full-width" id="operator-search-country">
+
+  <option value="AF">Afghanistan</option>
+  <option value="AX">Åland Islands</option>
+  <option value="AL">Albania</option>
+  <option value="DZ">Algeria</option>
+  <option value="AS">American Samoa</option>
+  <option value="AD">Andorra</option>
+  <option value="AO">Angola</option>
+  <option value="AI">Anguilla</option>
+  <option value="AG">Antigua and Barbuda</option>
+  <option value="AR">Argentina</option>
+  <option value="AM">Armenia</option>
+  <option value="AW">Aruba</option>
+  <option value="AU">Australia</option>
+  <option value="AT">Austria</option>
+  <option value="AZ">Azerbaijan</option>
+  <option value="BS">Bahamas (the)</option>
+  <option value="BH">Bahrain</option>
+  <option value="BD">Bangladesh</option>
+  <option value="BB">Barbados</option>
+  <option value="BY">Belarus</option>
+  <option value="BE">Belgium</option>
+  <option value="BZ">Belize</option>
+  <option value="BJ">Benin</option>
+  <option value="BM">Bermuda</option>
+  <option value="BT">Bhutan</option>
+  <option value="BO">Bolivia (Plurinational State of)</option>
+  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+  <option value="BA">Bosnia and Herzegovina</option>
+  <option value="BW">Botswana</option>
+  <option value="BR">Brazil</option>
+  <option value="IO">British Indian Ocean Territory (the)</option>
+  <option value="BN">Brunei Darussalam</option>
+  <option value="BG">Bulgaria</option>
+  <option value="BF">Burkina Faso</option>
+  <option value="BI">Burundi</option>
+  <option value="CV">Cabo Verde</option>
+  <option value="KH">Cambodia</option>
+  <option value="CM">Cameroon</option>
+  <option value="CA">Canada</option>
+  <option value="KY">Cayman Islands (the)</option>
+  <option value="CF">Central African Republic (the)</option>
+  <option value="TD">Chad</option>
+  <option value="CL">Chile</option>
+  <option value="CN">China</option>
+  <option value="CO">Colombia</option>
+  <option value="KM">Comoros (the)</option>
+  <option value="CD">Congo (the Democratic Republic of the)</option>
+  <option value="CG">Congo (the)</option>
+  <option value="CK">Cook Islands (the)</option>
+  <option value="CR">Costa Rica</option>
+  <option value="CI">Côte d'Ivoire</option>
+  <option value="HR">Croatia</option>
+  <option value="CU">Cuba</option>
+  <option value="CW">Curaçao</option>
+  <option value="CY">Cyprus</option>
+  <option value="CZ">Czechia</option>
+  <option value="DK">Denmark</option>
+  <option value="DJ">Djibouti</option>
+  <option value="DM">Dominica</option>
+  <option value="DO">Dominican Republic (the)</option>
+  <option value="EC">Ecuador</option>
+  <option value="EG">Egypt</option>
+  <option value="SV">El Salvador</option>
+  <option value="GQ">Equatorial Guinea</option>
+  <option value="ER">Eritrea</option>
+  <option value="EE">Estonia</option>
+  <option value="SZ">Eswatini</option>
+  <option value="ET">Ethiopia</option>
+  <option value="FK">Falkland Islands (the) [Malvinas]</option>
+  <option value="FO">Faroe Islands (the)</option>
+  <option value="FJ">Fiji</option>
+  <option value="FI">Finland</option>
+  <option value="FR">France</option>
+  <option value="GF">French Guiana</option>
+  <option value="PF">French Polynesia</option>
+  <option value="GA">Gabon</option>
+  <option value="GM">Gambia (the)</option>
+  <option value="GE">Georgia</option>
+  <option value="DE">Germany</option>
+  <option value="GH">Ghana</option>
+  <option value="GI">Gibraltar</option>
+  <option value="GR">Greece</option>
+  <option value="GL">Greenland</option>
+  <option value="GD">Grenada</option>
+  <option value="GP">Guadeloupe</option>
+  <option value="GU">Guam</option>
+  <option value="GT">Guatemala</option>
+  <option value="GG">Guernsey</option>
+  <option value="GN">Guinea</option>
+  <option value="GW">Guinea-Bissau</option>
+  <option value="GY">Guyana</option>
+  <option value="HT">Haiti</option>
+  <option value="VA">Holy See (the)</option>
+  <option value="HN">Honduras</option>
+  <option value="HK">Hong Kong</option>
+  <option value="HU">Hungary</option>
+  <option value="IS">Iceland</option>
+  <option value="IN">India</option>
+  <option value="ID">Indonesia</option>
+  <option value="IR">Iran (Islamic Republic of)</option>
+  <option value="IQ">Iraq</option>
+  <option value="IE">Ireland</option>
+  <option value="IM">Isle of Man</option>
+  <option value="IL">Israel</option>
+  <option value="IT">Italy</option>
+  <option value="JM">Jamaica</option>
+  <option value="JP">Japan</option>
+  <option value="JE">Jersey</option>
+  <option value="JO">Jordan</option>
+  <option value="KZ">Kazakhstan</option>
+  <option value="KE">Kenya</option>
+  <option value="KI">Kiribati</option>
+  <option value="KP">Korea (the Democratic People's Republic of)</option>
+  <option value="KR">Korea (the Republic of)</option>
+  <option value="KW">Kuwait</option>
+  <option value="KG">Kyrgyzstan</option>
+  <option value="LA">Lao People's Democratic Republic (the)</option>
+  <option value="LV">Latvia</option>
+  <option value="LB">Lebanon</option>
+  <option value="LS">Lesotho</option>
+  <option value="LR">Liberia</option>
+  <option value="LY">Libya</option>
+  <option value="LI">Liechtenstein</option>
+  <option value="LT">Lithuania</option>
+  <option value="LU">Luxembourg</option>
+  <option value="MO">Macao</option>
+  <option value="MG">Madagascar</option>
+  <option value="MW">Malawi</option>
+  <option value="MY">Malaysia</option>
+  <option value="ML">Mali</option>
+  <option value="MT">Malta</option>
+  <option value="MH">Marshall Islands (the)</option>
+  <option value="MQ">Martinique</option>
+  <option value="MR">Mauritania</option>
+  <option value="MU">Mauritius</option>
+  <option value="YT">Mayotte</option>
+  <option value="MX">Mexico</option>
+  <option value="FM">Micronesia (Federated States of)</option>
+  <option value="MD">Moldova (the Republic of)</option>
+  <option value="MC">Monaco</option>
+  <option value="MN">Mongolia</option>
+  <option value="ME">Montenegro</option>
+  <option value="MS">Montserrat</option>
+  <option value="MA">Morocco</option>
+  <option value="MZ">Mozambique</option>
+  <option value="MM">Myanmar</option>
+  <option value="NA">Namibia</option>
+  <option value="NR">Nauru</option>
+  <option value="NP">Nepal</option>
+  <option value="NL">Netherlands (the)</option>
+  <option value="NC">New Caledonia</option>
+  <option value="NZ">New Zealand</option>
+  <option value="NI">Nicaragua</option>
+  <option value="NE">Niger (the)</option>
+  <option value="NG">Nigeria</option>
+  <option value="NU">Niue</option>
+  <option value="NF">Norfolk Island</option>
+  <option value="MP">Northern Mariana Islands (the)</option>
+  <option value="NO">Norway</option>
+  <option value="OM">Oman</option>
+  <option value="PK">Pakistan</option>
+  <option value="PW">Palau</option>
+  <option value="PS">Palestine, State of</option>
+  <option value="PA">Panama</option>
+  <option value="PG">Papua New Guinea</option>
+  <option value="PY">Paraguay</option>
+  <option value="PE">Peru</option>
+  <option value="PH">Philippines (the)</option>
+  <option value="PN">Pitcairn</option>
+  <option value="PL">Poland</option>
+  <option value="PT">Portugal</option>
+  <option value="PR">Puerto Rico</option>
+  <option value="QA">Qatar</option>
+  <option value="MK">Republic of North Macedonia</option>
+  <option value="RE">Réunion</option>
+  <option value="RO">Romania</option>
+  <option value="RU">Russian Federation (the)</option>
+  <option value="RW">Rwanda</option>
+  <option value="BL">Saint Barthélemy</option>
+  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+  <option value="KN">Saint Kitts and Nevis</option>
+  <option value="LC">Saint Lucia</option>
+  <option value="MF">Saint Martin (French part)</option>
+  <option value="PM">Saint Pierre and Miquelon</option>
+  <option value="VC">Saint Vincent and the Grenadines</option>
+  <option value="WS">Samoa</option>
+  <option value="SM">San Marino</option>
+  <option value="ST">Sao Tome and Principe</option>
+  <option value="SA">Saudi Arabia</option>
+  <option value="SN">Senegal</option>
+  <option value="RS">Serbia</option>
+  <option value="SC">Seychelles</option>
+  <option value="SL">Sierra Leone</option>
+  <option value="SG">Singapore</option>
+  <option value="SX">Sint Maarten (Dutch part)</option>
+  <option value="SK">Slovakia</option>
+  <option value="SI">Slovenia</option>
+  <option value="SB">Solomon Islands</option>
+  <option value="SO">Somalia</option>
+  <option value="ZA">South Africa</option>
+  <option value="GS">South Georgia and the South Sandwich Islands</option>
+  <option value="SS">South Sudan</option>
+  <option value="ES">Spain</option>
+  <option value="LK">Sri Lanka</option>
+  <option value="SD">Sudan (the)</option>
+  <option value="SR">Suriname</option>
+  <option value="SE">Sweden</option>
+  <option value="CH">Switzerland</option>
+  <option value="SY">Syrian Arab Republic</option>
+  <option value="TW">Taiwan (Province of China)</option>
+  <option value="TJ">Tajikistan</option>
+  <option value="TZ">Tanzania, United Republic of</option>
+  <option value="TH">Thailand</option>
+  <option value="TL">Timor-Leste</option>
+  <option value="TG">Togo</option>
+  <option value="TK">Tokelau</option>
+  <option value="TO">Tonga</option>
+  <option value="TT">Trinidad and Tobago</option>
+  <option value="TN">Tunisia</option>
+  <option value="TR">Turkey</option>
+  <option value="TM">Turkmenistan</option>
+  <option value="TC">Turks and Caicos Islands (the)</option>
+  <option value="TV">Tuvalu</option>
+  <option value="UG">Uganda</option>
+  <option value="UA">Ukraine</option>
+  <option value="AE">United Arab Emirates (the)</option>
+  <option value="GB">United Kingdom</option>
+  <option value="XI">United Kingdom - Northern Ireland</option>
+  <option value="UM">United States Minor Outlying Islands (the)</option>
+  <option value="US">United States of America (the)</option>
+  <option value="UY">Uruguay</option>
+  <option value="UZ">Uzbekistan</option>
+  <option value="VU">Vanuatu</option>
+  <option value="VE">Venezuela (Bolivarian Republic of)</option>
+  <option value="VN">Viet Nam</option>
+  <option value="VG">Virgin Islands (British)</option>
+  <option value="VI">Virgin Islands (U.S.)</option>
+  <option value="WF">Wallis and Futuna</option>
+  <option value="YE">Yemen</option>
+  <option value="ZM">Zambia</option>
+  <option value="ZW">Zimbabwe</option>
+
+</select>
+
+</div>
+
+<div class="govuk-form-group"><h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="search-fieldCutting plant"> Search for and select Cutting plant</label></h1>
+<div class="govuk-input__wrapper"><input class="govuk-input" id="search-fieldCutting plant" type="text" spellcheck="false" placeholder="Type here"></div></div></section></div></div></div>
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Cold store</label>
+<div class="operator-search">
+<div class="operator-search-dropdown"><section id="search-and-select">
+<div class="govuk-form-group"><label class="govuk-label" for="country"> Country </label>
+
+<select class="govuk-select full-width" id="operator-search-country">
+
+  <option value="AF">Afghanistan</option>
+  <option value="AX">Åland Islands</option>
+  <option value="AL">Albania</option>
+  <option value="DZ">Algeria</option>
+  <option value="AS">American Samoa</option>
+  <option value="AD">Andorra</option>
+  <option value="AO">Angola</option>
+  <option value="AI">Anguilla</option>
+  <option value="AG">Antigua and Barbuda</option>
+  <option value="AR">Argentina</option>
+  <option value="AM">Armenia</option>
+  <option value="AW">Aruba</option>
+  <option value="AU">Australia</option>
+  <option value="AT">Austria</option>
+  <option value="AZ">Azerbaijan</option>
+  <option value="BS">Bahamas (the)</option>
+  <option value="BH">Bahrain</option>
+  <option value="BD">Bangladesh</option>
+  <option value="BB">Barbados</option>
+  <option value="BY">Belarus</option>
+  <option value="BE">Belgium</option>
+  <option value="BZ">Belize</option>
+  <option value="BJ">Benin</option>
+  <option value="BM">Bermuda</option>
+  <option value="BT">Bhutan</option>
+  <option value="BO">Bolivia (Plurinational State of)</option>
+  <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+  <option value="BA">Bosnia and Herzegovina</option>
+  <option value="BW">Botswana</option>
+  <option value="BR">Brazil</option>
+  <option value="IO">British Indian Ocean Territory (the)</option>
+  <option value="BN">Brunei Darussalam</option>
+  <option value="BG">Bulgaria</option>
+  <option value="BF">Burkina Faso</option>
+  <option value="BI">Burundi</option>
+  <option value="CV">Cabo Verde</option>
+  <option value="KH">Cambodia</option>
+  <option value="CM">Cameroon</option>
+  <option value="CA">Canada</option>
+  <option value="KY">Cayman Islands (the)</option>
+  <option value="CF">Central African Republic (the)</option>
+  <option value="TD">Chad</option>
+  <option value="CL">Chile</option>
+  <option value="CN">China</option>
+  <option value="CO">Colombia</option>
+  <option value="KM">Comoros (the)</option>
+  <option value="CD">Congo (the Democratic Republic of the)</option>
+  <option value="CG">Congo (the)</option>
+  <option value="CK">Cook Islands (the)</option>
+  <option value="CR">Costa Rica</option>
+  <option value="CI">Côte d'Ivoire</option>
+  <option value="HR">Croatia</option>
+  <option value="CU">Cuba</option>
+  <option value="CW">Curaçao</option>
+  <option value="CY">Cyprus</option>
+  <option value="CZ">Czechia</option>
+  <option value="DK">Denmark</option>
+  <option value="DJ">Djibouti</option>
+  <option value="DM">Dominica</option>
+  <option value="DO">Dominican Republic (the)</option>
+  <option value="EC">Ecuador</option>
+  <option value="EG">Egypt</option>
+  <option value="SV">El Salvador</option>
+  <option value="GQ">Equatorial Guinea</option>
+  <option value="ER">Eritrea</option>
+  <option value="EE">Estonia</option>
+  <option value="SZ">Eswatini</option>
+  <option value="ET">Ethiopia</option>
+  <option value="FK">Falkland Islands (the) [Malvinas]</option>
+  <option value="FO">Faroe Islands (the)</option>
+  <option value="FJ">Fiji</option>
+  <option value="FI">Finland</option>
+  <option value="FR">France</option>
+  <option value="GF">French Guiana</option>
+  <option value="PF">French Polynesia</option>
+  <option value="GA">Gabon</option>
+  <option value="GM">Gambia (the)</option>
+  <option value="GE">Georgia</option>
+  <option value="DE">Germany</option>
+  <option value="GH">Ghana</option>
+  <option value="GI">Gibraltar</option>
+  <option value="GR">Greece</option>
+  <option value="GL">Greenland</option>
+  <option value="GD">Grenada</option>
+  <option value="GP">Guadeloupe</option>
+  <option value="GU">Guam</option>
+  <option value="GT">Guatemala</option>
+  <option value="GG">Guernsey</option>
+  <option value="GN">Guinea</option>
+  <option value="GW">Guinea-Bissau</option>
+  <option value="GY">Guyana</option>
+  <option value="HT">Haiti</option>
+  <option value="VA">Holy See (the)</option>
+  <option value="HN">Honduras</option>
+  <option value="HK">Hong Kong</option>
+  <option value="HU">Hungary</option>
+  <option value="IS">Iceland</option>
+  <option value="IN">India</option>
+  <option value="ID">Indonesia</option>
+  <option value="IR">Iran (Islamic Republic of)</option>
+  <option value="IQ">Iraq</option>
+  <option value="IE">Ireland</option>
+  <option value="IM">Isle of Man</option>
+  <option value="IL">Israel</option>
+  <option value="IT">Italy</option>
+  <option value="JM">Jamaica</option>
+  <option value="JP">Japan</option>
+  <option value="JE">Jersey</option>
+  <option value="JO">Jordan</option>
+  <option value="KZ">Kazakhstan</option>
+  <option value="KE">Kenya</option>
+  <option value="KI">Kiribati</option>
+  <option value="KP">Korea (the Democratic People's Republic of)</option>
+  <option value="KR">Korea (the Republic of)</option>
+  <option value="KW">Kuwait</option>
+  <option value="KG">Kyrgyzstan</option>
+  <option value="LA">Lao People's Democratic Republic (the)</option>
+  <option value="LV">Latvia</option>
+  <option value="LB">Lebanon</option>
+  <option value="LS">Lesotho</option>
+  <option value="LR">Liberia</option>
+  <option value="LY">Libya</option>
+  <option value="LI">Liechtenstein</option>
+  <option value="LT">Lithuania</option>
+  <option value="LU">Luxembourg</option>
+  <option value="MO">Macao</option>
+  <option value="MG">Madagascar</option>
+  <option value="MW">Malawi</option>
+  <option value="MY">Malaysia</option>
+  <option value="ML">Mali</option>
+  <option value="MT">Malta</option>
+  <option value="MH">Marshall Islands (the)</option>
+  <option value="MQ">Martinique</option>
+  <option value="MR">Mauritania</option>
+  <option value="MU">Mauritius</option>
+  <option value="YT">Mayotte</option>
+  <option value="MX">Mexico</option>
+  <option value="FM">Micronesia (Federated States of)</option>
+  <option value="MD">Moldova (the Republic of)</option>
+  <option value="MC">Monaco</option>
+  <option value="MN">Mongolia</option>
+  <option value="ME">Montenegro</option>
+  <option value="MS">Montserrat</option>
+  <option value="MA">Morocco</option>
+  <option value="MZ">Mozambique</option>
+  <option value="MM">Myanmar</option>
+  <option value="NA">Namibia</option>
+  <option value="NR">Nauru</option>
+  <option value="NP">Nepal</option>
+  <option value="NL">Netherlands (the)</option>
+  <option value="NC">New Caledonia</option>
+  <option value="NZ">New Zealand</option>
+  <option value="NI">Nicaragua</option>
+  <option value="NE">Niger (the)</option>
+  <option value="NG">Nigeria</option>
+  <option value="NU">Niue</option>
+  <option value="NF">Norfolk Island</option>
+  <option value="MP">Northern Mariana Islands (the)</option>
+  <option value="NO">Norway</option>
+  <option value="OM">Oman</option>
+  <option value="PK">Pakistan</option>
+  <option value="PW">Palau</option>
+  <option value="PS">Palestine, State of</option>
+  <option value="PA">Panama</option>
+  <option value="PG">Papua New Guinea</option>
+  <option value="PY">Paraguay</option>
+  <option value="PE">Peru</option>
+  <option value="PH">Philippines (the)</option>
+  <option value="PN">Pitcairn</option>
+  <option value="PL">Poland</option>
+  <option value="PT">Portugal</option>
+  <option value="PR">Puerto Rico</option>
+  <option value="QA">Qatar</option>
+  <option value="MK">Republic of North Macedonia</option>
+  <option value="RE">Réunion</option>
+  <option value="RO">Romania</option>
+  <option value="RU">Russian Federation (the)</option>
+  <option value="RW">Rwanda</option>
+  <option value="BL">Saint Barthélemy</option>
+  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+  <option value="KN">Saint Kitts and Nevis</option>
+  <option value="LC">Saint Lucia</option>
+  <option value="MF">Saint Martin (French part)</option>
+  <option value="PM">Saint Pierre and Miquelon</option>
+  <option value="VC">Saint Vincent and the Grenadines</option>
+  <option value="WS">Samoa</option>
+  <option value="SM">San Marino</option>
+  <option value="ST">Sao Tome and Principe</option>
+  <option value="SA">Saudi Arabia</option>
+  <option value="SN">Senegal</option>
+  <option value="RS">Serbia</option>
+  <option value="SC">Seychelles</option>
+  <option value="SL">Sierra Leone</option>
+  <option value="SG">Singapore</option>
+  <option value="SX">Sint Maarten (Dutch part)</option>
+  <option value="SK">Slovakia</option>
+  <option value="SI">Slovenia</option>
+  <option value="SB">Solomon Islands</option>
+  <option value="SO">Somalia</option>
+  <option value="ZA">South Africa</option>
+  <option value="GS">South Georgia and the South Sandwich Islands</option>
+  <option value="SS">South Sudan</option>
+  <option value="ES">Spain</option>
+  <option value="LK">Sri Lanka</option>
+  <option value="SD">Sudan (the)</option>
+  <option value="SR">Suriname</option>
+  <option value="SE">Sweden</option>
+  <option value="CH">Switzerland</option>
+  <option value="SY">Syrian Arab Republic</option>
+  <option value="TW">Taiwan (Province of China)</option>
+  <option value="TJ">Tajikistan</option>
+  <option value="TZ">Tanzania, United Republic of</option>
+  <option value="TH">Thailand</option>
+  <option value="TL">Timor-Leste</option>
+  <option value="TG">Togo</option>
+  <option value="TK">Tokelau</option>
+  <option value="TO">Tonga</option>
+  <option value="TT">Trinidad and Tobago</option>
+  <option value="TN">Tunisia</option>
+  <option value="TR">Turkey</option>
+  <option value="TM">Turkmenistan</option>
+  <option value="TC">Turks and Caicos Islands (the)</option>
+  <option value="TV">Tuvalu</option>
+  <option value="UG">Uganda</option>
+  <option value="UA">Ukraine</option>
+  <option value="AE">United Arab Emirates (the)</option>
+  <option value="GB">United Kingdom</option>
+  <option value="XI">United Kingdom - Northern Ireland</option>
+  <option value="UM">United States Minor Outlying Islands (the)</option>
+  <option value="US">United States of America (the)</option>
+  <option value="UY">Uruguay</option>
+  <option value="UZ">Uzbekistan</option>
+  <option value="VU">Vanuatu</option>
+  <option value="VE">Venezuela (Bolivarian Republic of)</option>
+  <option value="VN">Viet Nam</option>
+  <option value="VG">Virgin Islands (British)</option>
+  <option value="VI">Virgin Islands (U.S.)</option>
+  <option value="WF">Wallis and Futuna</option>
+  <option value="YE">Yemen</option>
+  <option value="ZM">Zambia</option>
+  <option value="ZW">Zimbabwe</option>
+</select>
+
+</div>
+
+<div class="govuk-form-group"><h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="search-fieldCold store"> Search for and select Cold store</label></h1>
+<div class="govuk-input__wrapper"><input class="govuk-input" id="search-fieldCold store" type="text" spellcheck="false" placeholder="Type here"></div></div></section></div></div></div>
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Package count</label>
+<div class="govuk-input__wrapper select-input-wrapper"><input class="govuk-input" type="number" data-type="quantity" name="PACKAGE_COUNT">
+<div class="govuk-input__suffix suffix__action" aria-hidden="true">
+
+<select class="govuk-select">
+  <option value="" disabled="">Select a unit</option>
+  <option value="BG">Bag</option>
+  <option value="BL">Bale, compressed</option>
+  <option value="GR">Receptacle, glass</option>
+  <option value="BX">Box</option>
+  <option value="VR">Bulk, solid, granular particles ("grains")</option>
+  <option value="CA">Can, rectangular</option>
+  <option value="CI">Canister</option>
+  <option value="CT">Carton</option>
+  <option value="CS">Case</option>
+  <option value="CK">Cask</option>
+  <option value="CF">Coffer</option>
+  <option value="CN">Container, not otherwise specified as transport equipment</option>
+  <option value="CR">Crate</option>
+  <option value="DR">Drum</option>
+  <option value="JR">Jar</option>
+  <option value="LZ">Logs, in bundle/bunch/truss</option>
+  <option value="LU">Lug</option>
+  <option value="QQ">Box, wooden, natural wood, with sift proof walls</option>
+  <option value="QP">Box, wooden, natural wood, ordinary</option>
+  <option value="PK">Package</option>
+  <option value="PL">Pail</option>
+  <option value="PX">Pallet</option>
+  <option value="LE">Luggage</option>
+  <option value="XD">Bag, plastics film</option>
+  <option value="QR">Box, plastic, expanded</option>
+  <option value="PJ">Punnet</option>
+  <option value="RT">Rednet</option>
+  <option value="TK">Tank, rectangular</option>
+  <option value="TT">Bag, tote</option>
+  <option value="PU">Tray pack</option>
+  <option value="TU">Tube</option>
+  <option value="VI">Vial</option>
+  <option value="8B">Crate, wooden</option>
+  <option value="IA">Package, display, wooden</option>
+  <option value="QH">Barrel, wooden, bung type</option>
+  <option value="QJ">Barrel, wooden, removable head</option>
+  <option value="EE">Case, with pallet base, wooden</option>
+</select>
+
+</div></div></div>
+
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Net weight</label>
+<div class="govuk-input__wrapper select-input-wrapper"><input class="govuk-input" type="number" data-type="quantity" name="NET_WEIGHT">
+<div class="govuk-input__suffix suffix__action" aria-hidden="true">
+
+<select class="govuk-select">
+  <option value="" disabled="">Select a unit</option>
+  <option value="GRM">gram</option>
+  <option value="KGM">kilogram</option>
+  <option value="KTN">kilotonne</option>
+  <option value="TNE">tonne (metric ton)</option>
+</select>
+
+</div></div></div>
+
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Date of freezing</label><input class="govuk-input" type="datetime-local" id="FREEZING_DATE-8-11437-020120"></div>
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Nature of commodity</label>
+
+<select class="govuk-select full-width" id="NATURE_OF_COMMODITY-9-11437-020120">
+
+  <option value="" disabled="">Select a Nature of commodity</option>
+  <option value="BLPF">Blood products for feeding purposes</option>
+  <option value="BLOOD_PRODUCTS_FEEDINGSTUFF">Blood products / feedingstuff</option>
+  <option value="BLOOD_PRODUCTS_TECHNICAL">Blood products / technical</option>
+  <option value="BLPT">Blood products for technical purposes</option>
+  <option value="BONE">Bone</option>
+  <option value="POWDER_BONES">Powder bones</option>
+  <option value="BHHP">Bones, horns, hooves and products thereof</option>
+  <option value="BOWELS">Bowels</option>
+  <option value="BY_PRODUCTS_FEEDINGSTUFF">By-products / feedingstuff</option>
+  <option value="BY_PRODUCTS_TECHNICAL">By-products / technical</option>
+  <option value="PETC">Canned petfood</option>
+  <option value="CATW">Catering waste</option>
+  <option value="COL">Collagen</option>
+  <option value="COLOSTRUM">Colostrum</option>
+  <option value="COMR">Compost after composting</option>
+  <option value="COSM">Cosmetic products</option>
+  <option value="DCAP">Dicalcium phosphate</option>
+  <option value="BIOR">Digestion residues from biogas production other than biogas</option>
+  <option value="DTC">Digestive tract content</option>
+  <option value="DOMESTIC">Domestic</option>
+  <option value="EGG">Egg Products</option>
+  <option value="OVOPROD">ovoproducts</option>
+  <option value="GIBEL">Farmed game</option>
+  <option value="FATD">Fat derivatives</option>
+  <option value="FEATHERS">Feathers</option>
+  <option value="FEED_ADDITIVES_AND_PREMIXTURES">Feed additives and premixtures</option>
+  <option value="FEED">Feed production (please specify)</option>
+  <option value="FERT">Fertilisers other than COMR, BIOR, MANU, MANP</option>
+  <option value="FLAVOURING_INNARDS">flavouring innards</option>
+  <option value="PETFI">Flavouring innards for petfood</option>
+  <option value="GIBIER">Game</option>
+  <option value="GAME_TROPHIES">Game trophies</option>
+  <option value="GATR">Game trophies</option>
+  <option value="GEL">Gelatine</option>
+  <option value="HIDES">Hides</option>
+  <option value="HORNS_HOOVES">horns/hooves</option>
+  <option value="HYDROLISED_PROTEINS">hydrolised proteins</option>
+  <option value="HYDP">Hydrolysed protein</option>
+  <option value="INSE">Insects including maggots and worms</option>
+  <option value="GELEEROY">Jelly royal</option>
+  <option value="GGIBEL">Large farmed game</option>
+  <option value="GGIB">Large wild game</option>
+  <option value="GRGIBSAUV">Large wild game</option>
+  <option value="WWT">Material collected from waste water treatment</option>
+  <option value="MATERIAL_CATEGORY_1">Material of category 1</option>
+  <option value="MATERIAL_CATEGORY_2">Material of category 2</option>
+  <option value="MATERIAL_CATEGORY_3">Material of category 3</option>
+  <option value="MBM">Meat and bone meal (Category 1, 2)</option>
+  <option value="MEDD">Medical devices</option>
+  <option value="MILK_BASED">milk based products</option>
+  <option value="MIMC">Milk, colostrum and derived products from milk and colostrum</option>
+  <option value="NON_EDIBLE_COLLAGEN">Non edible collagen</option>
+  <option value="NON_HUMAN_CONSUMPTION">non human consumption</option>
+  <option value="OTHER">Other</option>
+  <option value="RAW">Other unprocessed ABP</option>
+  <option value="PETD">Petfood: dogchews</option>
+  <option value="PHARM">Pharmaceutical products</option>
+  <option value="POWDER">Powder</option>
+  <option value="PAP">Processed animal protein (Category 3; indicate animal species)</option>
+  <option value="MANURE_PROCESSED">processed manure</option>
+  <option value="MANP">Processed manure and manure products</option>
+  <option value="PETP">Processed petfood other than canned petfood</option>
+  <option value="FORMF">Products of animal origin/ no longer for human consumption</option>
+  <option value="HISKR">Raw hides and skins</option>
+  <option value="RAW_MATERIAL_FOR_GEL_COL">Raw material for processing of gelatine and collagen</option>
+  <option value="RAW_PET_FOOD">Raw petfood</option>
+  <option value="PETR">Raw petfood</option>
+  <option value="FATOL">Rendered fat from ABP for oleochemical purposes</option>
+  <option value="FATF">Rendered fats and fish oil for feeding</option>
+  <option value="FATOT">Rendered fats and fish oil for purposes other than for feeding or for oleochemical purposes</option>
+  <option value="CASING">Casing</option>
+  <option value="HISKT">Treated hides and skins</option>
+  <option value="TCAP">Tricalcium phosphate</option>
+  <option value="MANU">Unprocessed manure</option>
+  <option value="MANURE_UNPROCESSED">unprocessed manure</option>
+  <option value="CAD">Whole bodies of dead animals (cadavers)</option>
+  <option value="GIBSAUV">Wild game</option>
+  <option value="WHBF">wool, hair, pig bristles, feathers</option>
+  <option value="AQUARIUM">Aquarium</option>
+  <option value="BREEDING_EGGS">Breeding eggs</option>
+  <option value="OVA_EMBRYO">Ova-embryos</option>
+  <option value="EMBRYOS">Embryos</option>
+  <option value="HATCHING_EGGS">Hatching eggs</option>
+  <option value="SEMEN">Semen</option>
+  <option value="BUDWOOD_SCIONS">Budwood/scions</option>
+  <option value="INTENDED_FOR_PLANTING_ALREADY_PLANTED">Intended for planting: already planted</option>
+  <option value="INTENDED_FOR_PLANTING_AQUATIC_PLANTS">Intended for planting: aquatic plants</option>
+  <option value="INTENDED_FOR_PLANTING_BONSAI">Intended for planting: bonsai</option>
+  <option value="INTENDED_FOR_PLANTING_CARNIVOROUS_PLANTS">Intended for planting: carnivorous plants</option>
+  <option value="INTENDED_FOR_PLANTING_CUTTINGS">Intended for planting: cuttings</option>
+  <option value="INTENDED_FOR_PLANTING_NOT_YET_PLANTED">Intended for planting: not yet planted</option>
+  <option value="INTENDED_FOR_PLANTING_OTHERS">Intended for planting: others</option>
+  <option value="INTENDED_FOR_PLANTING_PLANT_TISSUE_CULTURE">Intended for planting: plant tissue culture</option>
+  <option value="INTENDED_FOR_PLANTING_SEED_POTATOES">Intended for planting: seed potatoes</option>
+  <option value="INTENDED_FOR_PLANTING_SEEDLINGS">Intended for planting: seedlings (except forestry reproductive material), young plants of strawberries or of vegetables</option>
+  <option value="INTENDED_FOR_PLANTING_SEEDS">Intended for planting: seeds</option>
+  <option value="INTENDED_FOR_PLANTING_SHRUBS">Intended for planting: shrubs, trees (other than cut Christmas trees), other woody nursery plants including forest reproductive material</option>
+  <option value="INTENDED_FOR_PLANTING_UNDERGROUND_ORGANS">Intended for planting: underground organs</option>
+  <option value="OTHER_LIVING_PLANTS_CUT_BRANCHES_WITHOUT_FOLIAGE">Other living plants: cut branches without foliage</option>
+  <option value="OTHER_LIVING_PLANTS_CUT_FLOWERS_AND_BRANCHES_WITH_FOLIAGE">Other living plants: cut flowers and branches with foliage</option>
+  <option value="OTHER_LIVING_PLANTS_CUT_TREES_RETAINING_FOLIAGE">Other living plants: cut trees retaining foliage</option>
+  <option value="OTHER_LIVING_PLANTS_FRUIT_AND_VEGETABLES">Other living plants: fruit and vegetables</option>
+  <option value="OTHER_LIVING_PLANTS_LEAFY_VEGETABLES">Other living plants: leafy vegetables</option>
+  <option value="OTHER_LIVING_PLANTS_LEAVES">Other living plants: leaves</option>
+  <option value="OTHER_LIVING_PLANTS_OTHERS">Other living plants: others</option>
+  <option value="OTHER_LIVING_PLANTS_POLLEN">Other living plants: pollen</option>
+  <option value="OTHER_LIVING_PLANTS_STORED_PRODUCTS_CAPABLE_OF_GERMINATING">Other living plants: stored products capable of germinating</option>
+  <option value="OTHER_LIVING_PLANTS_WARE_POTATOES">Other living plants: ware potatoes</option>
+  <option value="OTHERS">Others</option>
+  <option value="PLANT_PRODUCTS_BARK">Plant products: bark</option>
+  <option value="PLANT_PRODUCTS_DUNNAGE">Plant products: dunnage</option>
+  <option value="PLANT_PRODUCTS_LOGS">Plant products: logs</option>
+  <option value="PLANT_PRODUCTS_OTHERS">Plant products: others</option>
+  <option value="PLANT_PRODUCTS_SAWN_WOOD">Plant products: sawn wood / timber</option>
+  <option value="PLANT_PRODUCTS_STORED_PRODUCTS_NOT_CAPABLE_OF_GERMINATING">Plant products: stored products not capable of germinating</option>
+  <option value="PLANT_PRODUCTS_WASTE_OF_PLANT_ORIGIN">Plant products: waste of plant origin</option>
+  <option value="PLANT_PRODUCTS_WOOD_AND_BARK">Plant products: wood and bark</option>
+  <option>SPF</option>
+  <option value="EDIBLE_COLLAGEN">Edible Collagen</option>
+  <option value="FRESH_MEAT">Fresh Meat</option>
+  <option value="TREATED_RAW_MATERIAL_FOR_PROCESSING_GELATINE_COLLAGEN">Treated Raw material for processing of gelatine and collagen</option>
+  <option value="ALMONDS">almonds</option>
+  <option value="AUBERGINES">Aubergines</option>
+  <option value="BASIL_HOLY_SWEET">Basil (holy, sweet)</option>
+  <option value="BASMATI_RICE_FOR_HC">Basmati rice for direct human consumption</option>
+  <option value="BETEL_LEAVES">Betel leaves</option>
+  <option value="BITTER_MELON_MOMORDICA">Bitter melon (Momordica charantia)</option>
+  <option value="BRASSICA_VEGETABLES">Brassica vegetables</option>
+  <option value="BRAZIL_NUTS_IN_SHELL">Brazil nuts in shell</option>
+  <option value="CHEESE_FONDUES">Cheese fondues</option>
+  <option value="CHILLI_PRODUCTS">Chilli products (curry)</option>
+  <option value="CHINESE_CELERY">Chinese celery (Apium graveolens)</option>
+  <option value="COMPOSITE_PRODUCTS">Composite products</option>
+  <option value="CONSUMPTION">consumption</option>
+  <option value="CORIANDER_LEAVE">Coriander leaves</option>
+  <option value="DRAGON_FRUIT">Dragon fruit</option>
+  <option value="DRIED_NOODLES">Dried Noodles</option>
+  <option value="FARMED_STOCK">Farmed stock</option>
+  <option value="FIG_PASTE">fig paste</option>
+  <option value="FIGS">figs</option>
+  <option value="FIGS_PREPARED_OR_PRESERVED">figs, prepared or preserved</option>
+  <option value="FIGS_FLOUR_MEAL_POWDER">flour, meal and powder of figs</option>
+  <option value="HAZELNUTS_FLOUR_MEAL_POWDER">flour, meal and powder of hazelnuts</option>
+  <option value="PISTACHIOS_FLOUR_MEAL_POWDER">flour, meal and powder of pistachios</option>
+  <option value="FRESH_OKRA">Fresh okra</option>
+  <option value="GREEN_BEANS">Green beans</option>
+  <option value="HAZELNUT_PASTE">hazelnut paste</option>
+  <option value="HAZELNUTS">hazelnuts</option>
+  <option value="HAZELNUTS_PREPARED_PRESERVED">hazelnuts, prepared or preserved</option>
+  <option value="HTST_UHT">HTST,Sterilisation,UHT</option>
+  <option value="HUMAN_CONSUMPTION">human consumption</option>
+  <option value="LAUKI_LAGENARIA">Lauki (Lagenaria siceraria)</option>
+  <option value="MEAT_PREPARATIONS">meat preparations</option>
+  <option value="MEAT_PRODUCTS">meat products</option>
+  <option value="MINT">Mint</option>
+  <option value="PARSLEY">Parsley</option>
+  <option value="PASTEURIZED">Pasteurized</option>
+  <option value="PISTACHIO_PASTE">pistachio paste</option>
+  <option value="PISTACHIOS">pistachios</option>
+  <option value="PISTACHIOS_PREPARED">pistachios, prepared or preserved</option>
+  <option value="CAPSULES_PRODUCTS">product in capsules</option>
+  <option value="RAW_MILK">Raw milk</option>
+  <option value="ROASTED_ALMONDS">roasted almonds</option>
+  <option value="ROASTED_PISTACH">roasted pistachios</option>
+  <option value="SESAMUM_SEEDS">Sesamum seeds</option>
+  <option value="PEGIBPLUMEE">Small feathered farmed game</option>
+  <option value="PEGIBSAUV">Small wild game</option>
+  <option value="PEGIBPLUMES">Small feathered wild game</option>
+  <option value="TEA_LEAVES">Tea leaves (black and green)</option>
+  <option>UHT</option>
+  <option value="VINE_LEAVES">Vine leaves</option>
+  <option value="WATERMELON_EGUSI">Watermelon (egusi, Citrullus lanatus) seeds and derived products</option>
+  <option value="WILD_STOCK">Wild stock</option>
+  <option value="YARDLONG_BEANS">Yardlong beans (Vigna unguiculata spp. sesquipedalis)</option>
+  <option value="CURRY_LEAVES_BERGERA">Curry leaves (Bergera/ Murraya koenigii)</option>
+  <option value="ANIMAL">Animal</option>
+  <option value="API">Apiculture by-products</option>
+  <option value="BEES_PRODUCTS">Products produced by bees</option>
+  <option value="BILE">Bile</option>
+  <option value="BIOD">Biodiesel</option>
+  <option value="BIOG">Biogas</option>
+  <option value="BLOOD">Blood</option>
+  <option value="SERE">Blood and blood products from equidae</option>
+</select>
+
+</div>
+<div class="govuk-form-group"><label class="govuk-label" for="event-name">Quantity</label>
+<div class="govuk-input__wrapper select-input-wrapper"><input class="govuk-input" type="number" data-type="quantity" name="QUANTITY">
+
+<div class="govuk-input__suffix suffix__action" aria-hidden="true">
+
+<select class="govuk-select">
+
+  <option value="" disabled="">Select a unit</option>
+  <option value="H87">PIECE</option>
+  <option value="H87">UNIT</option>
+
+</select>
+
+</div></div></div></section>
+
+<section id="actions"><a class="govuk-button m-r-5">Add identification</a><a class="govuk-button govuk-button--secondary m-r-5">Clear</a><a class="govuk-button govuk-button--secondary">Multi create</a></section></div></div>
+
+<div class="govuk-grid-column-one-half">
+<div class="identifications"><section id="intro"><h4 class="govuk-heading-s"> Identifications for this commodity </h4></section><section>
+<div class="alert-pane alert-pane--information">
+<div class="alert-pane--heading"><span class="fas fa-info-circle"></span> Hint </div> There are currently no identifications against this commodity. Use the form to enter the identification details and then click "Add identification". </div></section></div></div></div><hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+<div class="" data-v-06a86646=""><table class="govuk-table" data-v-06a86646=""><caption class="govuk-table__caption govuk-table__caption--s" data-v-06a86646="">Quantity and weight</caption><thead class="govuk-table__head" data-v-06a86646=""><tr class="govuk-table__row" data-v-06a86646=""><th scope="col" class="govuk-table__header" data-v-06a86646=""></th><th scope="col" class="govuk-table__header" data-v-06a86646="">Amount</th><th scope="col" class="govuk-table__header" data-v-06a86646="">Unit</th></tr></thead><tbody class="govuk-table__body" data-v-06a86646=""><tr class="govuk-table__row" data-v-06a86646=""><th scope="row" class="govuk-table__header" data-v-06a86646="">Gross weight</th><td class="govuk-table__cell" data-v-06a86646=""><input class="govuk-input govuk-input--width-10" name="grossWeightForCommodity" data-v-06a86646="" min="1000000000000" max="0"><br data-v-06a86646="">
+<div class="commodity-total-quick-actions-group" data-v-06a86646=""><span class="commodity-total-quick-action" data-v-06a86646="">1</span><span class="commodity-total-quick-action" data-v-06a86646="">10</span><span class="commodity-total-quick-action" data-v-06a86646="">100</span><span class="commodity-total-quick-action" data-v-06a86646="">1000</span></div></td><td class="govuk-table__cell" data-v-06a86646="">
+
+<select class="govuk-select full-width" name="units-for-gross-weight" data-v-06a86646="">
+  <option value="GRM" data-v-06a86646="">gram</option>
+  <option value="KGM" data-v-06a86646="">kilogram</option>
+  <option value="KTN" data-v-06a86646="">kilotonne</option>
+  <option value="TNE" data-v-06a86646="">tonne (metric ton)</option>
+</select>
+
+</td></tr><tr data-v-06a86646=""><td data-v-06a86646=""></td><td class="p-b-25 p-r-15" data-v-06a86646=""></td><td data-v-06a86646="">
+
+  <button class="govuk-button full-width m-t-15" data-v-06a86646="">Update totals</button>
+
+</td></tr></tbody></table></div></div></div></div></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px;background-color: #f3f2f1;border-top: 2px solid #ff003b;display: block;padding: 1em 15px 15px;text-decoration: none;">
+        <h2 class="gem-c-contextual-sidebar__brexit-heading govuk-heading-s">Do you need help?</h2>
+        <p class="gem-c-contextual-sidebar__brexit-text govuk-body">
+          <a class="govuk-link" data-module="gem-track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="#" data-track-dimension="Check what you need to do" data-track-dimension-index="29" lang="en" href="#">Review the guidance and contact us for assistance.</a>
+        </p>
+      </div>
+    </div>
+
+
+
+{% endblock %}
+

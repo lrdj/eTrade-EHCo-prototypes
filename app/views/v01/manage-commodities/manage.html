@@ -1,0 +1,82 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Enter missing details for each commodity
+      </h1>
+<!-- include "includes/manage-commodities-introC.html" -->
+<!--
+  Select the correct EHC certificate code from the list and click on "Add to export" to save it as part of your application
+-->
+
+
+
+
+
+
+<dl class="govuk-summary-list">
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__value">
+      206/2010 (2017/731) Meat of domestic sheep and goat - Model OVI
+    </dt>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="manage-a">
+        Add or change information<span class="govuk-visually-hidden"> EHC code</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__value">
+      206/2010 (2020/2235) Meat of domestic sheep and goat - Model OVI
+    </dt>
+    <dd class="govuk-summary-list__actions">
+      <a class="govuk-link" href="manage-b">
+        Add or change information<span class="govuk-visually-hidden"> EHC code</span>
+      </a>
+    </dd>
+  </div>
+
+</dl>
+
+<form method="post" novalidate="" action="/v01/to-do-list#eltoppio">
+
+<button class="govuk-button" data-module="govuk-button">
+  Return to to-do list
+</button>
+
+</form>
+
+
+
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px;background-color: #f3f2f1;border-top: 2px solid #ff003b;display: block;padding: 1em 15px 15px;text-decoration: none;">
+        <h2 class="gem-c-contextual-sidebar__brexit-heading govuk-heading-s">Do you need help?</h2>
+        <p class="gem-c-contextual-sidebar__brexit-text govuk-body">
+          <a class="govuk-link" data-module="gem-track-click" data-track-category="relatedLinkClicked" data-track-action="1.0 Transition" data-track-label="#" data-track-dimension="Check what you need to do" data-track-dimension-index="29" lang="en" href="#">Review the guidance and contact us for assistance.</a>
+        </p>
+      </div>
+    </div>
+
+
+
+{% endblock %}
+

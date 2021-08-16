@@ -1,0 +1,150 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Tell us what goods you are exporting
+        <span class="govuk-caption-xl"> Add commodities to your export.</span>
+      </h1>{{releaseVersion | log }}
+
+{% include "includes/manage-commodities-introC.html" %}
+
+    </div>
+  </div>
+
+
+<div class="govuk-width-container">
+
+
+<a href="L3c-2"><img src="/public/images/drill-downB.png" style="margin-top: 1em;width: 800px;border: none;"></a>
+
+
+
+<section class="sections">
+  <table class="tariff-table govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">
+          Back to: <a href="L2">Meat and edible meat offal</a>
+        </th>
+        <th scope="col" class="govuk-table__header">Chapter</th>
+        <th scope="col" class="govuk-table__header">Heading</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat of bovine animals, fresh or chilled</a>
+  </td>
+  <td class="numeral govuk-table__cell">2</td>
+  <td class="chapters govuk-table__cell">1</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat of bovine animals, frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell">2</td>
+  <td class="chapters govuk-table__cell">2</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat of swine, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell">2</td>
+  <td class="chapters govuk-table__cell">3</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      Meat of sheep or goats, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">4</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">
+      Meat of horses, asses, mules or hinnies, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">5</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">6</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat and edible offal, of the poultry of heading 0105, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">7</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Other meat and edible meat offal, fresh, chilled or frozen</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">8</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">9</td>
+</tr>
+
+<tr class="govuk-table__row">
+  <td class="title govuk-table__cell">
+    <a href="#">Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal</a>
+  </td>
+  <td class="numeral govuk-table__cell"></td>
+  <td class="chapters govuk-table__cell">10</td>
+</tr>
+
+
+
+    </tbody>
+  </table>
+</section>
+
+
+
+
+
+</div>
+
+
+{% endblock %}
+
+Carcases and half-carcases
+Short forequarters
+Chines and/or best ends
+Legs
+
+

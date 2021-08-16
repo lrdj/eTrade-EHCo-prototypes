@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block header %}
+  {% include "includes/header.html" %}
+{% endblock %}
+
+
+{% block pageTitle %}
+  {% include "includes/page-title.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Tell us what goods you are exporting
+        <span class="govuk-caption-xl"> Add commodities to your export.</span>
+      </h1>{{releaseVersion | log }}
+
+{% include "includes/manage-commodities-introC.html" %}
+
+    </div>
+  </div>
+
+
+<!--
+
+Chapter 1 through 5
+
+Live animals
+Meat and edible meat offal
+Fish and crustaceans, molluscs and other aquatic invertebrates
+Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included
+Products of animal origin, not elsewhere specified or included
+
+-->
+
+<div class="govuk-width-container">
+
+
+<a href="L3b-2"><img src="/public/images/drill-down.png" style="margin-top: 1em;width: 800px;border: none;"></a>
+
+
+</div>
+
+
+{% endblock %}
+
+

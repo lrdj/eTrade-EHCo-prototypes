@@ -1,0 +1,328 @@
+
+
+
+
+/* fake mixins from Dug */
+
+@mixin govuk-font ($fontsize, $line-height: 1em, $weight: normal,) {
+  font-family:"GDS Transport",arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-weight: $weight;
+  font-size: $fontsize;
+  line-height: $line-height;
+  margin-bottom:25px;
+}
+
+
+@mixin govuk-media-query($args...) {
+    @content;
+}
+
+@mixin govuk-responsive-margin ($one, $two ) { /* foo */ }
+
+
+$covid-yellow: yellow;
+$covid-grey: grey;
+$govuk-text-colour: #0b0c0c;
+
+
+
+/* GDS stylesheet from git alphagov */
+
+$c19-landing-page-header-background: govuk-colour("blue");
+
+.covid__page {
+  .govuk-grid-column-one-third,
+  .govuk-grid-column-two-thirds {
+    @media (max-width: 950px) {
+      width: 100%;
+    }
+  }
+}
+
+.covid__page-title {
+  @include govuk-font(48, $weight: bold);
+  margin-bottom: govuk-spacing(5);
+
+  @include govuk-media-query($from: tablet) {
+    margin-top: govuk-spacing(4);
+    margin-bottom: 45px;
+  }
+}
+
+.covid__page-header {
+  margin-bottom: govuk-spacing(8);
+  border-top: solid govuk-spacing(2) $covid-yellow;
+  background-color: $c19-landing-page-header-background;
+  color: govuk-colour("white");
+
+  .covid__page-header-link {
+    font-weight: normal;
+
+    &:link,
+    &:visited {
+      color: govuk-colour("white");
+    }
+
+    &:focus {
+      color: $govuk-text-colour;
+    }
+  }
+}
+
+.covid__page-header--business {
+  background-color: $c19-landing-page-header-background;
+}
+
+.covid__page-header-list {
+  .govuk-list {
+    color: govuk-colour("white");
+  }
+}
+
+.covid__page-header--hub {
+  background-color: $c19-landing-page-header-background;
+}
+
+.covid__page-header--landing-page {
+  @include govuk-media-query($until: tablet) {
+    margin-bottom: govuk-spacing(3);
+  }
+}
+
+.covid__page-header-title-section-break {
+  padding: 0 govuk-spacing(3);
+}
+
+.covid__page-header-title-section-break--white {
+  border-color: govuk-colour("white");
+}
+
+.covid__page-header-content-section {
+  padding: govuk-spacing(5) 0;
+
+  @include govuk-media-query($from: tablet) {
+    padding: 45px 0 40px;
+  }
+
+  .gem-c-govspeak {
+    li {
+      margin: 0 0 govuk-spacing(2);
+    }
+  }
+}
+
+.covid__page-header-content-section--hub {
+  padding-bottom: 35px;
+  background: $c19-landing-page-header-background;
+
+  @include govuk-media-query($from: tablet) {
+    padding-bottom: govuk-spacing(6);
+  }
+}
+
+.covid__nhs-notice {
+  @include govuk-responsive-margin(4, "bottom");
+  border: solid 5px $covid-grey;
+  padding: govuk-spacing(4) govuk-spacing(4) 0 govuk-spacing(4);
+}
+
+.covid__nhs-notice__logo {
+  max-width: 60px;
+  height: 33px;
+  margin-bottom: govuk-spacing(2);
+}
+
+.covid__announcement-published-text {
+  margin-top: govuk-spacing(1);
+
+  @include govuk-media-query($from: desktop) {
+    margin-bottom: govuk-spacing(6);
+  }
+}
+
+.covid__action-link-wrapper {
+  margin-top: govuk-spacing(5);
+
+  @include govuk-media-query($from: tablet) {
+    margin-top: govuk-spacing(3);
+  }
+}
+
+.covid__page-header-title-wrapper {
+  @include govuk-media-query($from: tablet) {
+    position: relative;
+  }
+}
+
+.covid__list {
+  @include govuk-font(19);
+  margin-bottom: govuk-spacing(3);
+  list-style-type: none;
+
+  @include govuk-media-query($from: tablet) {
+    margin-bottom: govuk-spacing(4);
+  }
+}
+
+.covid__spaced-list > li {
+  &:nth-child(2n) {
+    margin-bottom: govuk-spacing(5);
+
+    @include govuk-media-query($from: desktop) {
+      margin-bottom: govuk-spacing(4);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.covid__list--header {
+  padding-left: govuk-spacing(4);
+  list-style-type: disc;
+  color: govuk-colour("white");
+}
+
+.covid__list-item-description {
+  @include govuk-font(19);
+  padding-left: govuk-spacing(6);
+}
+
+.covid__list-item {
+  margin-bottom: govuk-spacing(2);
+}
+
+.covid__video-wrapper {
+  margin-bottom: govuk-spacing(4);
+}
+
+.covid__video-placeholder {
+  position: relative;
+  padding: 110px 0;
+  margin-bottom: govuk-spacing(4);
+  border: solid 2px govuk-colour("black");
+  text-align: center;
+
+  .govuk-body {
+    margin: 0;
+  }
+
+  .covid__bold {
+    font-weight: bold;
+  }
+}
+
+.covid__video-logo {
+  @include govuk-font(19, $weight: bold, $line-height: 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: govuk-spacing(1);
+  padding-top: govuk-spacing(2);
+  padding-left: govuk-spacing(5);
+  padding-right: govuk-spacing(2);
+  margin: govuk-spacing(3);
+  border: solid 1px govuk-colour("black");
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    width: 12px;
+    height: 12px;
+    background: govuk-colour("red");
+    border-radius: 100%;
+  }
+}
+
+.covid__list ~ .covid__accordion-heading {
+  margin-top: govuk-spacing(7);
+}
+
+.covid__inverse {
+  color: govuk-colour("white");
+}
+
+.covid__topic-wrapper {
+  padding-top: govuk-spacing(6);
+
+  @include govuk-media-query($from: tablet) {
+    margin-top: govuk-spacing(6);
+  }
+}
+
+.covid__topic-list-item {
+  @include govuk-media-query($until: desktop) {
+    padding: govuk-spacing(1) 0;
+  }
+}
+
+.covid__topic-list-link {
+  @include govuk-font(19, $weight: bold);
+}
+
+.covid__page-guidance {
+  padding: govuk-spacing(8) 0 govuk-spacing(7) 0;
+  background-color: govuk-colour("light-grey");
+  color: govuk-colour("black");
+}
+
+.covid__alert-notice .covid__alert-notice-body {
+  @include govuk-media-query($from: desktop) {
+    margin-top: govuk-spacing(2);
+    margin-bottom: govuk-spacing(2);
+  }
+}
+
+.covid-timeline {
+  padding-bottom: govuk-spacing(5);
+}
+
+.covid-timeline__item {
+  margin-bottom: govuk-spacing(5);
+}
+
+.covid-timeline__item-heading {
+  margin-bottom: govuk-spacing(1);
+}
+
+.covid-timeline__wrapper--hidden {
+  display: none;
+}
+
+.covid-timeline__tag-wrapper {
+  margin-left: govuk-spacing(1);
+
+  @include govuk-media-query($until: desktop) {
+    display: block;
+    margin: 0;
+    margin-top: govuk-spacing(1);
+  }
+}
+
+.covid-timeline__tag {
+  margin-right: govuk-spacing(1);
+  margin-bottom: govuk-spacing(1);
+}
+
+.covid-timeline__button-wrapper {
+  margin-top: -(govuk-spacing(2));
+
+  .js-enabled & {
+    display: none;
+  }
+}
+
+.covid-statistics__statistic-wrapper {
+  margin-bottom: govuk-spacing(5);
+}
+
+.covid-statistics__statistic-value {
+  @include govuk-font(80, $weight: bold);
+  margin-bottom: 0;
+}
